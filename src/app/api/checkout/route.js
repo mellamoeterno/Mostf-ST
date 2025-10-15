@@ -10,8 +10,8 @@ export async function POST(req) {
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       mode: "payment",
-      success_url: "https://mostf.vercel.app/obrigado",
-      cancel_url: "https://mostf.vercel.app/",
+      success_url: "https://mostf-st.vercel.app/obrigadoPelaCompra",
+      cancel_url: "https://mostf-st.vercel.app/api/webhook",
       line_items: body.items.map((item) => ({
         price_data: {
           currency: "brl",
