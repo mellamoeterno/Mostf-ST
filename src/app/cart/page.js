@@ -62,7 +62,7 @@ export default function CartPage() {
             <p className="text-gray-500 mb-4">Seu Carrinho Está Vazio</p>
             <Link 
               href="/" 
-              className="inline-block bg-blue-500 text-black px-4 py-2 rounded hover:bg-blue-600 transition-colors"
+              className="inline-block bg-emerald-900 text-black px-4 py-2 rounded hover:bg-emerald-800 transition-colors"
             >
               Continuar Comprando
             </Link>

@@ -24,7 +24,7 @@ export default function MiniCart() {
     <div className="fixed top-4 right-4 z-50">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="relative bg-[#b6b6b6ab] text-white px-4 py-2 rounded shadow hover:bg-[#83838386] transition"
+        className="relative bg-[#ffffff] text-[#383838c7] px-4 py-2 squared shadow hover:bg-[#8383833f] transition"
       >
         🛒 Carrinho ({cart.length})
         <AnimatePresence>

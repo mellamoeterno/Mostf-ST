@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function helpCenter() {
   return (
 <div className="bg-black max-w-7xl mx-auto p-4">
@@ -17,15 +19,29 @@ export default function helpCenter() {
       <section className="text-center mb-12">
         <h2>
             <p>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ecommercmkssouza@gmail.com&su=Olá&Gostaria=I%20de%20suporte%20nesse%20look%20porfavor." 
+                <a href="/vestidos/suporteEmail" 
                 className="font-semibold text-center mb-8 text-blue-600">ecommercmkssouza@gmail.com</a>
                 
             </p>
             <p>
-                <a href="https://wa.me/556181808187" className="font-semibold text-center mb-8 text-blue-600">+55 (61) 981808187</a>
+                <a href="/vestidos/suporteWhatsapp" className="font-semibold text-center mb-8 text-blue-600">+55 (61) 981808187</a>
             </p>
         </h2>
       </section>
+           <Link href="/vestidos/suporteEmail"><p className="text-lg text-gray-600 mb-4">
+            -Clique no E-mail para resolver problemas á respeito de detalhes com o seu pedido, cancelamento de envio, ou devolução.
+            
+            
+            </p>
+           </Link>
+            <div></div>
+
+            <Link href="/vestidos/suporteWhatsapp"><p className="text-lg text-gray-600 mb-4">
+            -Clique no número Whatsapp para dúvidas quanto aos produtos ou informar sobre algum erro com sua compra.
+            
+            
+            </p>
+            </Link>
 </div>
 )
 };

@@ -4,7 +4,7 @@ import Stripe from "stripe";
 import { buffer } from "micro";
 import { initializeApp, getApps } from "firebase/app";
 import { getFirestore, doc, setDoc } from "firebase/firestore";
-
+//this webhook is for listening to sells  data from stripe
 // 🔹 Initialize Firebase only once
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
