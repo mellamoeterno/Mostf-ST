@@ -161,8 +161,33 @@ const conjuntos = [
     }
   ];
 
+    const [bannerVisible, setBannerVisible] = useState(true);
+    
+    /* MARQUEE / BANNER STATE */
+
+  useEffect(() => {
+    // toggle every 10s: visible 10s, hidden 10s, ...
+    const interval = setInterval(() => {
+      setBannerVisible((prev) => !prev);
+    }, 25000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+    /* MARQUEE / BANNER STATE */
+
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-[#ffffff] via-[#ffffff] to-[#ffffff] font-sans px-4 sm:px-6 md:px-8 gap-10">
+
+      {/* CSS for marquee keyframes */}
+      <style jsx>{`
+        @keyframes marquee {
+          0% { transform: translateX(0%); }
+          100% { transform: translateX(-100%); }
+        }
+      `}</style>
+
        <>
               <MiniCart />
     
@@ -220,6 +245,32 @@ const conjuntos = [
       </div>
       {/* HEADER HEADER HEADER */}
 
+      {/* caroulsel message */}
+      <div
+        className={`fixed left-0 right-0 top-[calc(12vh+12px)] z-40 pointer-events-none transition-opacity duration-700 ${
+          bannerVisible ? "opacity-50" : "opacity-0"
+        }`}
+        aria-hidden={!bannerVisible}
+        >
+        <div
+          className="mx-auto max-w-7xl overflow-hidden bg-black text-white py-2"
+          style={{ pointerEvents: "none" }}
+        >
+          <div
+            className="whitespace-nowrap text-sm font-medium"
+            style={{
+              display: "inline-block",
+              paddingLeft: "100%", // ensure it starts off-screen right
+              animation: `marquee 30s linear infinite`,
+              animationPlayState: bannerVisible ? "running" : "paused",
+            }}
+          >
+            Vendas para Brasília frete grátis • Parcelamento na maquininha até 3x ---- Vendas para Brasília frete grátis • Parcelamento na maquininha até 3x ---- Vendas para Brasília frete grátis • Parcelamento na maquininha até 3x ---- Vendas para Brasília frete grátis • Parcelamento na maquininha até 3x ----
+          </div>
+        </div>
+      </div>
+      {/* caroulsel message */}
+
       {/* PRODUCTS PRODUCTS PRODUCTS */}
       <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1758517835/mostflogoLarge_mzy4ex.jpg" className="fixed top-0 w-full z-30 flex items-center justify-between px-6 py-0 object-cover" />
       <img src="images/showUp/M1.jpeg" className="w-100 h-100 object-cover" />
@@ -247,6 +298,66 @@ const conjuntos = [
       </section>
 
       {/* PRODUCTS PRODUCTS PRODUCTS */}
+
+      {/* explore explore explore */} 
+      <section className="py-16 bg-white text-black text-center px-4">
+        <h2 className="text-2xl md:text-3xl font-serif mb-6">
+          Explore mais de motf
+        </h2>
+        <Link href="/products1W" className="mt-4 px-6 py-3 bg-white text-black uppercase tracking-wider hover:bg-emerald-950 transition">
+          Veja Todos Os Produtos
+        </Link>
+      </section>
+      {/* explore explore explore */}
+      
+      {/* footer footer footer */}
+        <footer className="w-full bg-[#000] text-gray-200 px-4 py-8">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-sm">
+            <div>
+              <h3 className="text-white font-semibold mb-2">Suporte</h3>
+              <ul>
+                <li><a href="/policy/helpCenter" className="text-[#a8a8a8] hover:underline">Centro de ajuda</a></li>
+                <li><a href="/vestidos/suporteWhatsapp" className="text-[#a8a8a8] hover:underline">Tenho perguntas</a></li>
+                <li><a href="/vestidos/suporteEmail" className="text-[#a8a8a8] hover:underline">Problemas com pedido</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-white font-semibold mb-2">Email</h3>
+              <p className="break-words">
+                <a href="/vestidos/suporteEmail" 
+                className="text-[#a8a8a8] hover:underline">
+                  ecommercmkssouza@gmail.com
+                </a>
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-white font-semibold mb-2">Contato WhatsApp</h3>
+              <p>
+                <a href="/vestidos/suporteWhatsapp" className="text-[#a8a8a8] hover:underline">
+                  +55 (61) 981808187
+                </a>
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-white font-semibold mb-2">Política</h3>
+              <ul>
+                <li><a href="/policy" className="text-[#a8a8a8] hover:underline">Política de privacidade</a></li>
+                <li><a href="/policy" className="text-[#a8a8a8] hover:underline">Termos de serviço</a></li>
+                <li><a href="/policy" className="text-[#a8a8a8] hover:underline">Como cuidamos das entregas</a></li>
+              </ul>
+            </div>
+          </div>
+           {/*integrate when we get the Copyright for MOTF
+
+          <div className="mt-8 text-center text-xs text-gray-500">
+            © {new Date().getFullYear()} Motf. All rights reserved.
+          </div>
+          */}
+        </footer>
+       {/* PRODUCTS PRODUCTS PRODUCTS */}
       </>
     </div>
   );
