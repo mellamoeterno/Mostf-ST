@@ -71,14 +71,15 @@ export default function ObrigadoPage() {
               <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
                 <h3 className="font-semibold text-gray-700 mb-2">Próximos Passos</h3>
                 <p className="text-sm text-gray-600">
-                  Você receberá um e-mail com os detalhes da compra e informações de rastreamento.
+                  Você receberá um e-mail com os detalhes da compra e informações de rastreamento em breve.
                 </p>
               </div>
               
               <div className="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
                 <h3 className="font-semibold text-gray-700 mb-2">Dúvidas?</h3>
                 <p className="text-sm text-gray-600">
-                  Entre em contato conosco através do suporte@exemplo.com
+                  Entre em contato conosco através do  <a href="https://wa.me/556181808187" className="text-black hover:underline">Whatsapp
+                </a>
                 </p>
               </div>
             </div>
@@ -95,7 +96,7 @@ export default function ObrigadoPage() {
               </button>
               
               <button 
-                onClick={() => window.location.href = '/pedidos'}
+                onClick={() => window.location.href = 'https://mail.google.com'}
                 className="border-2 border-gray-300 hover:border-indigo-500 text-gray-700 hover:text-indigo-600 font-medium py-3 px-6 rounded-lg transition-all duration-300"
               >
                 Meus Pedidos
