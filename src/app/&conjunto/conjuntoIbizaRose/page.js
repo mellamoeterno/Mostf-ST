@@ -48,7 +48,8 @@ export default function ProductPage() {
 //image image image image image image image image image image image image image image image
 
   const images = [
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761424509/Conjunto_BordadoibizaRos%C3%A9149G-P_1_m2rrqa.jpg",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761445514/Conjunto_BordadoibizaRos%C3%A9149G-P_1_hyaati.jpg",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761445588/Conjunto_BordadoibizaRos%C3%A9149G-P_2_chmll9.png",
   ];
 
   const handlePrev = () =>
