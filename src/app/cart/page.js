@@ -263,18 +263,18 @@ export default function CartPage() {
                  <div>
                   <h3 className="text-black font-semibold mb-2">Pagamento</h3>
                   
-                    <img src="images/boleto.png" className="w-10 h-5 object-cover" />
-                    <img src="images/mastercard.png" className="w-10 h-5 object-cover" />
-                    <img src="images/visa.png" className="w-10 h-5 object-cover" />
+                    <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1761448095/boleto_raxlfu.png" className="w-10 h-5 object-cover" />
+                    <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1761448097/mastercard_el0vvr.png" className="w-10 h-5 object-cover" />
+                    <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1761448106/visa_dfudtu.png" className="w-10 h-5 object-cover" />
                   
                 </div>
 
                 <div>
-                  <img src="images/stripe.png" className="w-40 h-40 object-cover" />
+                  <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1761448103/stripe_zrvtbd.png" className="w-40 h-40 object-cover" />
                 </div>
 
                 <div>
-                  <img src="images/nextjs.jfif" className="w-20 h-20 object-cover" />
+                  <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1761448100/nextjs_sugviy.jpg" className="w-20 h-20 object-cover" />
                 </div>
               </div>
               {/*integrate when we get the Copyright for MOTF <div className="mt-8 
