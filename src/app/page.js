@@ -267,7 +267,7 @@ const conjuntos = [
 
       {/* PRODUCTS PRODUCTS PRODUCTS */}
       <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1758517835/mostflogoLarge_mzy4ex.jpg" className="fixed top-0 w-full z-30 flex items-center justify-between px-6 py-0 object-cover" />
-      <img src="images/showUp/M1.jpeg" className="w-100 h-100 object-cover" />
+      <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1761447580/M1_junojq.jpg" className="w-100 h-100 object-cover" />
 
       <section className="py-12 sm:py-16 px-4 md:px-12 bg-white">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-center text-[#B76E79] mb-10">Nossos Conjuntos</h2>
@@ -275,7 +275,7 @@ const conjuntos = [
           {conjuntos.map(renderProductCard)}
         </div>
       </section>
-      <img src="images/showUp/M2.png" className="w-150 h-150 object-cover" />
+      <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1761447582/M2_vuflhw.png" className="w-150 h-150 object-cover" />
 
       <section className="py-12 sm:py-16 px-4 md:px-12 bg-white">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-center text-[#B76E79] mb-10">Nossos vestidos, Blusas & tal</h2>
