@@ -48,7 +48,6 @@ export default function ProductPage() {
 //image image image image image image image image image image image image image image image
 
   const images = [
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761419819/oliviaYellowM149_1_xqci7k.png",
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761419818/oliviaYellowM149_2_khhxrj.jpg",
   ];
 

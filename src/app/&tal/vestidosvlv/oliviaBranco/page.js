@@ -9,10 +9,11 @@ import MiniCart from "@/app/components/miniCart";
 const conjuntos = [
   {
     id: `idProduct-${crypto.randomUUID()}`,
-    href: "/&tal/vestidosvlv/vestidoCorselet",
-    src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761410230/Vestido_Corselet_169_90_Rosa_G_aogdsh.png",
-    title: "vestido Corselet G", //RELACIONADOS RELACIONADOS RELACIONADOS
-    price: 169,
+    href: "/&conjunto/conjuntoIbizaAzul",
+    src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761424505/ConjuntoBordadoAzul149P_1_tbllv5.jpg",
+    title: "conjuntoIbizaAzul", //RELACIONADOS RELACIONADOS RELACIONADOS
+    price: 149,
   },
 ];
 
