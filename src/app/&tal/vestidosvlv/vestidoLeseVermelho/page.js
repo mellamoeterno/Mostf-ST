@@ -8,12 +8,11 @@ import MiniCart from "@/app/components/miniCart";
 // Produtos relacionados NOT PRODUCT FROM THE PAGE, BUT FOR THE BOTTOM 'RELATED PRODUCTS' (inline)
 const conjuntos = [
   {
-    id: "emily-0002",
-    href: "https://checkout.infinitepay.io/sotfstudio?items=[{\"name\":\"lese+vermelho+P\",\"price\":18900,\"quantity\":1}]&redirect_url=https://mostf.vercel.app/",
-    src: "/images/roupas/emilyEmParis(emBreve).png",
-    title: "Emily Em Paris",
-    desc: "(Em Breve)",
-    price: 1,
+    id: `idProduct-${crypto.randomUUID()}`,
+    href: "/&tal/vestidosvlv/nudeM",
+    src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761409461/Nude_M_1_ivwe2p.png",
+    title: "Vestido Nude M", //RELACIONADOS RELACIONADOS RELACIONADOS
+    price: 199,
   },
 ];
 
@@ -42,7 +41,8 @@ export default function ProductPage() {
   );
 
   const images = [
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1759135599/leseV_1_syumax.png",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761366312/leseV_2_qmdmdz.png",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761366312/leseV_1_yrpuhm.png",
   ];
 
   const handlePrev = () =>
@@ -57,9 +57,9 @@ export default function ProductPage() {
     }
 
     addToCart({
-      id: `jaqueta-${selectedSize}`,
-      name: `Jaqueta couro pu - Tamanho ${selectedSize}`,
-      price: 1,
+      id: `vestido lese vermelho-${selectedSize}`, //title title
+      name: `vestido lese vermelho - Tamanho ${selectedSize}`, //title title
+      price: 199, //price price price
       size: selectedSize,
       quantity: 1,
       image: images[0],
@@ -101,7 +101,7 @@ export default function ProductPage() {
               <p className="text-gray-700 mb-6">R$ 199,00 Esgotado</p>
 
               <div className="mb-6">
-                <h2 className="text-[#133010] text-lg font-semibold mb-2">Tamanho</h2>
+{/*                 <h2 className="text-[#133010] text-lg font-semibold mb-2">Tamanho</h2>
                 <div className="flex gap-3">
                   {['P', 'M', 'G'].map((size) => (
                     <button
@@ -116,30 +116,30 @@ export default function ProductPage() {
                       {size}
                     </button>
                   ))}
-                </div>
+                </div> */}
               </div>
             </div>
 
-            <Link
+{/*             <Link
               href="https://wa.me/556181808187"
               className="bg-[#133010] text-white py-1 px-3 w-30 rounded-lg hover:bg-[#092705] transition-colors"//shorten, change color to shading gold rosé
             >
               Compre Aqui
             </Link>
-            <p className="text-black">Por tempo limitado disponibilizamos frete grátis em compras acima de $200 Compradores no Distrito Federal.</p>
+            <p className="text-black">Por tempo limitado disponibilizamos frete grátis para compradores no Distrito Federal.</p>
             <button
               onClick={handleAddToCart}
               className="bg-[#964B00] text-white py-3 px-6 rounded-lg hover:bg-amber-900 transition-colors font-medium mt-6"
             >
               Compra normal, Adicionar ao Carrinho
-            </button>
+            </button> */}
           </div>
         </main>
 
         {/* Related Products */}
         <section className="max-w-6xl mx-auto mt-12 w-full">
           <h2 className="text-2xl font-bold mb-6 text-[#133010]">Produtos Relacionados</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-[#133010]">
             {conjuntos.map(renderProductCard)}
           </div>
         </section>
