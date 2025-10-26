@@ -9,9 +9,10 @@ import MiniCart from "@/app/components/miniCart";
 const conjuntos = [
   {
     id: `idProduct-${crypto.randomUUID()}`,
-    href: "/&tal/vestidosvlv/vestidoCorselet",
-    src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761420867/corselet169rosaG_1_l2qmux.jpg",
-    title: "vestido Corselet G", //RELACIONADOS RELACIONADOS RELACIONADOS
+    href: "/&tal/vestidosvlv/vestidoJhulyeta",
+    src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761415897/vestidoJulhyeta169brancoP_3_kyheal.png",
+    title: "vestidoJhulyeta", //RELACIONADOS RELACIONADOS RELACIONADOS
     price: 169,
   },
 ];
