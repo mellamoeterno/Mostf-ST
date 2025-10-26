@@ -53,19 +53,19 @@ const conjuntos = [
       href: '/&conjunto/conjuntoIbizaAzul',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761424505/ConjuntoBordadoAzul149P_1_tbllv5.jpg",
-      title: "conjunto Ibiza Azul",
+      title: "Conjunto Ibiza Azul",
     },
     {
       href: '/&conjunto/conjuntoIbizaBege',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761424506/ConjuntoBordado149M_1_rczgsn.jpg",
-      title: "conjunto Ibiza Bege",
+      title: "Conjunto Ibiza Bege",
     },
     {
       href: '/&conjunto/conjuntoIbizaRose',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761445514/Conjunto_BordadoibizaRos%C3%A9149G-P_1_hyaati.jpg",
-      title: "conjunto Ibiza Rose",
+      title: "Conjunto Ibiza Rose",
     },
   ];
 
@@ -74,73 +74,67 @@ const conjuntos = [
       href: '/&tal/vestidosvlv/nudeM',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761409461/Nude_M_1_ivwe2p.png",
-      title: "vestido nude M",
+      title: "Vestido Lese offwhite M",
     },
     {
       href: '/&tal/vestidosvlv/oliviaBranco',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761413244/oliviaBrancotam42149_1_l09sp5.png",
-      title: "Olivia branco M",
+      title: "Olívia branco M",
     },
     {
       href: '/&tal/vestidosvlv/OliviaVermelhoM',
       src: 
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761420040/OliviaVermelhoM149_1_vgtvcp.png",
-      title: "Olivia Vermelho M",
-    },
-    {
-      href: '/&tal/vestidosvlv/vestidoCorselet',
-      src: 
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761420867/corselet169rosaG_1_l2qmux.jpg",
-      title: "vestido Corselet",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761420030/OliviaVermelhoM149_2_zvc9km.jpg",
+      title: "Olívia Vermelho M",
     },
     {
       href: '/&tal/vestidosvlv/vestidoJhulyeta',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761415897/vestidoJulhyeta169brancoP_3_kyheal.png",
-      title: "vestido Jhulyeta",
+      title: "Vestido Jhulyeta",
     },
     {
       href: '/&tal/vestidosvlv/vestidoLeseVermelho',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761366312/leseV_2_qmdmdz.png",
-      title: "vestido Lese Vermelho",
+      title: "Vestido Lese Vermelho",
     },
     {
       href: '/&tal/vestidosvlv/vestidoTubinhoBege',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761442449/VestidoTubihno129P_2_osxvgn.jpg",
-      title: "vestido Tubinho Bege",
+      title: "Vestido Tubinho Bege",
     },
     {
       href: '/&tal/vestidosvlv/vestidoTubinhoPreto',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761443030/vestidoTubinhoPreto129G_1_mqe2jc.jpg",
-      title: "vestido Tubinho Preto",
+      title: "Vestido Tubinho Preto",
     },
     {
       href: '/&tal/vestidosvlv/vestidoTubinhoRosa',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761442746/vestidoTubinhoRos%C3%A9P129_1_b6mveh.jpg",
-      title: "vestido Tubinho Rosa",
+      title: "Vestido Tubinho Rosa",
     },
     {
       href: '/&tal/vestidosvlv/vestidoVenesaAzulCianoP',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761416445/vestidoVenesaP159_2_new8mv.png",
-      title: "vestido Venesa Azul Ciano P",
+      title: "Vestido Venesa Azul Ciano P",
     },
     {
       href: '/&tal/vestidosvlv/vestidoVenesaRosaG',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761417750/vestidoVenesaG159_1_rqhuni.png",
-      title: "vestido Venesa Rosa G",
+      title: "Vestido Venesa Rosa G",
     },
     {
       href: '/&tal/vestidosvlv/vestidoVenesaYellow',
       src: 
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761419819/oliviaYellowM149_1_xqci7k.png",
-      title: "vestido Venesa Yellow",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761419818/oliviaYellowM149_2_khhxrj.jpg",
+      title: "Vestido Venesa Yellow",
     },
   ];
 
@@ -267,18 +261,18 @@ const conjuntos = [
 
       {/* PRODUCTS PRODUCTS PRODUCTS */}
       <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1758517835/mostflogoLarge_mzy4ex.jpg" className="fixed top-0 w-full z-30 flex items-center justify-between px-6 py-0 object-cover" />
-      <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1761447580/M1_junojq.jpg" className="w-100 h-100 object-cover" />
+      <img src="/images/showUp/nudeShowUp1.jpg" className="w-150 h-180 object-cover" />
 
       <section className="py-12 sm:py-16 px-4 md:px-12 bg-white">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-center text-[#B76E79] mb-10">Nossos Conjuntos</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-black gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-[#B76E79] gap-6">
           {conjuntos.map(renderProductCard)}
         </div>
       </section>
-      <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1761447582/M2_vuflhw.png" className="w-150 h-150 object-cover" />
+      <img src="/images/viena.png" className="w-150 h-150 object-cover" />
 
       <section className="py-12 sm:py-16 px-4 md:px-12 bg-white">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-center text-[#B76E79] mb-10">Nossos vestidos, Blusas & tal</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-center text-[#B76E79] mb-10">Nossos vestidos, Blusas</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-[#B76E79] gap-6">
           {blusas.map(renderProductCard)}
         </div>
