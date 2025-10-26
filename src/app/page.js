@@ -64,7 +64,7 @@ const conjuntos = [
     {
       href: '/&conjunto/conjuntoIbizaRose',
       src: 
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761424509/Conjunto_BordadoibizaRos%C3%A9149G-P_1_m2rrqa.jpg",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761445514/Conjunto_BordadoibizaRos%C3%A9149G-P_1_hyaati.jpg",
       title: "conjunto Ibiza Rose",
     },
   ];
