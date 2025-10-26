@@ -9,16 +9,16 @@ import MiniCart from "@/app/components/miniCart";
 const conjuntos = [
   {
     id: `idProduct-${crypto.randomUUID()}`,
-    href: "/&tal/vestidosvlv/vestidoJhulyeta",
-    src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761415896/vestidoJulhyeta169brancoP_1_dyujde.png",
-    title: "vestido jhulyeta P", //RELACIONADOS RELACIONADOS RELACIONADOS
-    price: 169,
+    href: "/&tal/vestidosvlv/oliviaBranco",
+    src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761413244/oliviaBrancotam42149_1_l09sp5.png",
+    title: "Olivia branco", //RELACIONADOS RELACIONADOS RELACIONADOS
+    price: 199,
   },
 ];
 
 // name specific price specific name specific price specific name specific price specific name  
-  const specificName = "vestido Corselet";
-  const specificPrice = "169" // your title data
+  const specificName = "Vestido nude M";
+  const specificPrice = "199" // your title data
 
 
 export default function ProductPage() {
@@ -48,8 +48,8 @@ export default function ProductPage() {
 //image image image image image image image image image image image image image image image
 
   const images = [
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761420867/corselet169rosaG_1_l2qmux.jpg",
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761420868/corselet169rosaG_2_bzlski.png",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761409461/Nude_M_1_ivwe2p.png",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761409461/Nude_M_2_ssp5nx.png",
   ];
 
   const handlePrev = () =>
@@ -66,9 +66,9 @@ export default function ProductPage() {
 //CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART
 
     addToCart({
-      id: `vestido Corselet G-${selectedSize}`,//title title title title title title title title
-      name: `vestido Corselet - Tamanho ${selectedSize}`,//title title title title title title
-      price: 169, //price price price price price price price price price price price price
+      id: `Vestido nude M-${selectedSize}`,//title title title title title title title title
+      name: `Vestido nude - Tamanho ${selectedSize}`, //title title title title title title
+      price: 199,//price price price price price price price price price price price price
       size: selectedSize,
       quantity: 1,
       image: images[0],
@@ -106,13 +106,13 @@ export default function ProductPage() {
           {/* Infos */}
           <div className="w-full md:w-1/2 flex flex-col justify-between">
             <div>
-              <h1 className="text-3xl font-bold mb-4 text-[#133010]">{specificName}</h1>
+              <h1 className="text-3xl font-bold mb-4 text-[#133010]">{specificName}</h1> 
               <p className="text-gray-700 mb-6">R$ {specificPrice}</p>
 
               <div className="mb-6">
-                <h2 className="text-[#133010] text-lg font-semibold mb-2">Tamanho</h2> {/* Tamanho Tamanho Tamanho Tamanho Tamanho Tamanho */}
+                <h2 className="text-[#133010] text-lg font-semibold mb-2">Tamanho</h2>  {/* Tamanho Tamanho Tamanho Tamanho Tamanho Tamanho */}
                 <div className="flex gap-3">
-                  {['G'].map((size) => (
+                  {[ 'M' ].map((size) => (
                     <button
                       key={size}
                       onClick={() => setSelectedSize(size)}
@@ -128,7 +128,7 @@ export default function ProductPage() {
                 </div>
               </div>
             </div>
-
+            {/* button */}
            <div>
             <Link
               href="https://wa.me/556181808187"
@@ -145,6 +145,7 @@ export default function ProductPage() {
             </button>
             </div>
             <div>filler,non,important,filler</div>
+           {/*  button */}
           </div>
         </main>
 

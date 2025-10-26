@@ -50,108 +50,108 @@ export default function DesktopComponent() {
 
 const conjuntos = [
     {
-      id: "BordadoIbiza149M",
-      href: '/update',
-      src: 'images/vestidos/Conjunto Bordado Ibiza 149 Nude Tamanho M .png',
-      title: "Conjunto Bordado Ibiza",
-      desc: "Nude Tamanho M ",
-      price: 149,
+      href: '/&conjunto/conjuntoIbizaAzul',
+      src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761424505/ConjuntoBordadoAzul149P_1_tbllv5.jpg",
+      title: "conjunto Ibiza Azul",
     },
     {
-      id: "cropedbrancozraP49",
-      href: '/update',
-      src: "images/vestidos/CROPPED BRANCO P ZRA 49,90 .png",
-      title: "ZRA CROPPED BRANCO",
-      desc: "CROPPED BRANCO P",
-      price:  49,
+      href: '/&conjunto/conjuntoIbizaBege',
+      src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761424506/ConjuntoBordado149M_1_rczgsn.jpg",
+      title: "conjunto Ibiza Bege",
     },
     {
-      id: "buque-0005",
-      href: '/update',
-      src: "images/vestidos/Conjunto Urban Chic 220 G .png",
-      title: "Conjunto Urban Chic",
-      desc: "Conjunto Urban Chic G",
-      price: 220,
+      href: '/&conjunto/conjuntoIbizaRose',
+      src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761424509/Conjunto_BordadoibizaRos%C3%A9149G-P_1_m2rrqa.jpg",
+      title: "conjunto Ibiza Rose",
     },
-    {
-      id: "nome1",
-      href: '/update',
-      src: "images/vestidos/Conjunto Urban Chic 220 ROSÉ ESGOTADO .png",
-      title: "Conjunto Urban Chic",
-      desc: "Urban Chic ROSÉ",
-      price: 220,
-    },
-    {
-      id: "nome3",
-      href: '/update',
-      src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672830/auroraVinho_4_dl4lnv.jpg",
-      title: "Aurora vinho",
-      desc: "aurora vinho",
-      price: 199,
-    },
-    {
-      id: "nome4",
-      href: '/update',
-      src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672829/barbara_2_2r_zr39iw.jpg",
-      title: "Barbara Cáqui",
-      desc: "barbara cáqui",
-      price: 199,
-    },
-    {
-      id: "nome5",
-      href: '/update',
-      src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672829/barbara_1_mh6ngs.jpg",
-      title: "Barbara Branco",
-      desc: "barbara branco",
-      price: 199,
-    }
   ];
 
   const blusas = [
       {
-      id: "leseVermelho199",
+      href: '/&tal/vestidosvlv/nudeM',
+      src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761409461/Nude_M_1_ivwe2p.png",
+      title: "vestido nude M",
+    },
+    {
+      href: '/&tal/vestidosvlv/oliviaBranco',
+      src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761413244/oliviaBrancotam42149_1_l09sp5.png",
+      title: "Olivia branco M",
+    },
+    {
+      href: '/&tal/vestidosvlv/OliviaVermelhoM',
+      src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761420040/OliviaVermelhoM149_1_vgtvcp.png",
+      title: "Olivia Vermelho M",
+    },
+    {
+      href: '/&tal/vestidosvlv/vestidoCorselet',
+      src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761420867/corselet169rosaG_1_l2qmux.jpg",
+      title: "vestido Corselet",
+    },
+    {
+      href: '/&tal/vestidosvlv/vestidoJhulyeta',
+      src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761415897/vestidoJulhyeta169brancoP_3_kyheal.png",
+      title: "vestido Jhulyeta",
+    },
+    {
       href: '/&tal/vestidosvlv/vestidoLeseVermelho',
-      src: "/images/vestidos/leseV (1) 199.png",
-      title: "vestido lese vermelho",
-      desc: "estilo impecável",
-      price: 199,
+      src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761366312/leseV_2_qmdmdz.png",
+      title: "vestido Lese Vermelho",
     },
     {
-      id: "VestidoCorseletG",
-      href: '/aa',
-      src: "/images/vestidos/Nude M (2).png",
-      title: "Vestido Nude",
-      desc: "Vestido Nude M",
-      price: 199,
+      href: '/&tal/vestidosvlv/vestidoTubinhoBege',
+      src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761442449/VestidoTubihno129P_2_osxvgn.jpg",
+      title: "vestido Tubinho Bege",
     },
     {
-      id: "VestidoCorseletG",
-      href: '/aaa',
-      src: "images/vestidos/Vestido Corselet 169,90 Rosa G.png",
-      title: "Vestido Corselet",
-      desc: "Vestido Corselet rosa G",
-      price: 169,
+      href: '/&tal/vestidosvlv/vestidoTubinhoPreto',
+      src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761443030/vestidoTubinhoPreto129G_1_mqe2jc.jpg",
+      title: "vestido Tubinho Preto",
     },
     {
-      id: "Oliviabranco149.90",
-      href: '/srcaaaaa',
-      src: "/images/vestidos/oliviaBranco149(1).png",
-      title: "Olivia branco",
-      desc: "Olivia branco Tam 42",
-      price: 149,
+      href: '/&tal/vestidosvlv/vestidoTubinhoRosa',
+      src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761442746/vestidoTubinhoRos%C3%A9P129_1_b6mveh.jpg",
+      title: "vestido Tubinho Rosa",
+    },
+    {
+      href: '/&tal/vestidosvlv/vestidoVenesaAzulCianoP',
+      src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761416445/vestidoVenesaP159_2_new8mv.png",
+      title: "vestido Venesa Azul Ciano P",
+    },
+    {
+      href: '/&tal/vestidosvlv/vestidoVenesaRosaG',
+      src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761417750/vestidoVenesaG159_1_rqhuni.png",
+      title: "vestido Venesa Rosa G",
+    },
+    {
+      href: '/&tal/vestidosvlv/vestidoVenesaYellow',
+      src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761419819/oliviaYellowM149_1_xqci7k.png",
+      title: "vestido Venesa Yellow",
     },
   ];
 
-  const calcas = [
+/*   const calcas = [
     {
-      id: "nome9",
       href: '/update',
-      src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749679231/trouserBranca_1_xpl4rr.jpg",
+      src: 
+      "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749679231/trouserBranca_1_xpl4rr.jpg",
       title: "Calça Comfy",
-      desc: "calça comfy +",
-      price: 199,
     }
-  ];
+  ]; */
 
     const [bannerVisible, setBannerVisible] = useState(true);
     
@@ -189,13 +189,14 @@ const conjuntos = [
       
      {/*  <div className="relative min-h-screen bg-white"></div> */}
      {/* HEADER HEADER HEADER */}
-        <header
+
+{/*         <header
         className={`hidden md:flex fixed top-36 left-0 w-full z-30 items-center justify-between px-6 py-3 bg-white/60 backdrop-blur-md shadow-sm transition-transform duration-500 ${
             showHeaderNames ? "translate-y-0" : "-translate-y-24"
         }`}
-        >
+        > */}
         {/* Desktop product names */}
-        <div className="hidden md:flex gap-6 text-gray-800 font-medium text-sm uppercase tracking-wide">
+{/*         <div className="hidden md:flex gap-6 text-gray-800 font-medium text-sm uppercase tracking-wide">
           {productNames.map((name, i) => (
             <a key={i} href="#" className="hover:text-gray-600 transition">
               {name}
@@ -203,9 +204,9 @@ const conjuntos = [
           ))}
         </div>
 
-      </header>
+      </header> */}
       {/* Mobile menu */}
-        <div className="md:hidden fixed top-3 left-3 z-50">
+{/*         <div className="md:hidden fixed top-3 left-3 z-50">
         <button
             className="p-2 text-gray-700 bg-white/80 backdrop-blur-sm rounded-md shadow-sm"
             onClick={() => setMenuOpen((prev) => !prev)}
@@ -213,9 +214,9 @@ const conjuntos = [
         >
             <Menu className="w-6 h-6" />
         </button>
-        </div>
+        </div> */}
       {/* Mobile dropdown */}
-      {menuOpen && (
+{/*       {menuOpen && (
         <div className="fixed top-14 left-0 right-0 bg-white/95 backdrop-blur-md shadow-md md:hidden z-20">
           <nav className="flex flex-col p-4 gap-3 text-gray-800 font-medium text-sm uppercase">
             {productNames.map((name, i) => (
@@ -225,7 +226,7 @@ const conjuntos = [
             ))}
           </nav>
         </div>
-      )}
+      )} */}
       {/* Mobile menu */}
 
       {/* filler */}
@@ -235,6 +236,7 @@ const conjuntos = [
           className="w-full h-full object-cover sticky top-0"
         />
       </div>
+
       {/* HEADER HEADER HEADER */}
 
       {/* caroulsel message */}
@@ -276,30 +278,30 @@ const conjuntos = [
       <img src="images/showUp/M2.png" className="w-150 h-150 object-cover" />
 
       <section className="py-12 sm:py-16 px-4 md:px-12 bg-white">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-center text-[#B76E79] mb-10">Nossas Jaquetas, Blusas & tal</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-center text-[#B76E79] mb-10">Nossos vestidos, Blusas & tal</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-[#B76E79] gap-6">
           {blusas.map(renderProductCard)}
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 px-4 md:px-12 bg-white">
+{/*       <section className="py-12 sm:py-16 px-4 md:px-12 bg-white">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif text-center text-[#B76E79] mb-10">Nossas Calças</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-black gap-6">
           {calcas.map(renderProductCard)}
         </div>
-      </section>
+      </section> */}
 
       {/* PRODUCTS PRODUCTS PRODUCTS */}
 
       {/* explore explore explore */} 
-      <section className="py-16 bg-white text-black text-center px-4">
+{/*       <section className="py-16 bg-white text-black text-center px-4">
         <h2 className="text-2xl md:text-3xl font-serif mb-6">
           Explore mais de motf
         </h2>
         <Link href="/products1W" className="mt-4 px-6 py-3 bg-white text-black uppercase tracking-wider hover:bg-emerald-950 transition">
           Veja Todos Os Produtos
         </Link>
-      </section>
+      </section> */}
       {/* explore explore explore */}
       
       {/* footer footer footer */}

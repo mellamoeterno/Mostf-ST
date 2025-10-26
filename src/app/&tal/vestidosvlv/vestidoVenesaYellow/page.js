@@ -10,15 +10,15 @@ const conjuntos = [
   {
     id: `idProduct-${crypto.randomUUID()}`,
     href: "/&tal/vestidosvlv/vestidoJhulyeta",
-    src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761415896/vestidoJulhyeta169brancoP_1_dyujde.png",
-    title: "vestido jhulyeta P", //RELACIONADOS RELACIONADOS RELACIONADOS
+    src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761415896/vestidoJulhyeta169brancoP_2_egrlfh.png",
+    title: "vestido Jhulyeta", //RELACIONADOS RELACIONADOS RELACIONADOS
     price: 169,
   },
 ];
 
 // name specific price specific name specific price specific name specific price specific name  
-  const specificName = "vestido Corselet";
-  const specificPrice = "169" // your title data
+  const specificName = "Vestido Venesa Yellow M";
+  const specificPrice = "159" // your title data
 
 
 export default function ProductPage() {
@@ -48,8 +48,8 @@ export default function ProductPage() {
 //image image image image image image image image image image image image image image image
 
   const images = [
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761420867/corselet169rosaG_1_l2qmux.jpg",
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761420868/corselet169rosaG_2_bzlski.png",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761419819/oliviaYellowM149_1_xqci7k.png",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761419818/oliviaYellowM149_2_khhxrj.jpg",
   ];
 
   const handlePrev = () =>
@@ -66,9 +66,9 @@ export default function ProductPage() {
 //CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART
 
     addToCart({
-      id: `vestido Corselet G-${selectedSize}`,//title title title title title title title title
-      name: `vestido Corselet - Tamanho ${selectedSize}`,//title title title title title title
-      price: 169, //price price price price price price price price price price price price
+      id: `Vestido Venesa Yellow -${selectedSize}`,//title title title title title title title title
+      name: `Vestido Venesa Yellow - Tamanho ${selectedSize}`,//title title title title title title
+      price: 159, //price price price price price price price price price price price price
       size: selectedSize,
       quantity: 1,
       image: images[0],
@@ -112,7 +112,7 @@ export default function ProductPage() {
               <div className="mb-6">
                 <h2 className="text-[#133010] text-lg font-semibold mb-2">Tamanho</h2> {/* Tamanho Tamanho Tamanho Tamanho Tamanho Tamanho */}
                 <div className="flex gap-3">
-                  {['G'].map((size) => (
+                  {['M'].map((size) => (
                     <button
                       key={size}
                       onClick={() => setSelectedSize(size)}
