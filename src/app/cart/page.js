@@ -18,8 +18,26 @@ export default function CartPage() {
     cart,
     cartTotal,
     removeFromCart,
-    clearCart
+    clearCart,
+    updateQuantity,
   } = useCart();
+
+//shipping fee
+
+  const FRETE_ADICIONAL = 17;
+
+  // Ensure cartTotal is a number (defensive parsing in case cartTotal is a string or formatted)
+  let numericCartTotal = Number(cartTotal);
+  if (Number.isNaN(numericCartTotal)) {
+    // Try common fallbacks: replace comma decimal with dot and strip non-number chars
+    const cleaned = String(cartTotal).replace(',', '.').replace(/[^0-9.\-]/g, '');
+    numericCartTotal = Number(cleaned);
+    if (Number.isNaN(numericCartTotal)) numericCartTotal = 0;
+  }
+
+  const totalComFrete = numericCartTotal + FRETE_ADICIONAL;
+
+  //shipping fee
 
   const ZAPIER_URL = "/api/send-to-zapier";
   /* HANDLE SUBMIT  */
@@ -55,6 +73,8 @@ export default function CartPage() {
           quantity: item.quantity || 1,
           size: item.size || null,
         })),
+        freteAdicional: FRETE_ADICIONAL,
+        totalComFrete
       };
 
       const zapierRes = await fetch(ZAPIER_URL, {
@@ -94,6 +114,7 @@ export default function CartPage() {
     window.scrollTo(0, 0);
   }, []);
 
+
   return (
     <div className="cart-page h-300">
       <main className="container mx-auto p-4 max-w-4xl">
@@ -111,31 +132,57 @@ export default function CartPage() {
           </div>
         ) : (
           <>
+
+          {/* change below  */}
             <div className="divide-y divide-gray-200 mb-8">
               {cart.map(item => (
                 <div key={item.id} className="py-4 flex flex-col sm:flex-row justify-between gap-4">
                   <div className="flex-1">
                     <h3 className="font-medium text-lg text-black">{item.name}</h3>
                     <p className="text-gray-600">R$ {Number(item.price).toFixed(2)}</p>
+                    <div className="flex items-center gap-3 mt-2">
+                      <button
+                        onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                        className="px-2 py-1 border rounded text-black hover:bg-gray-100"
+                      >
+                        −
+                      </button>
+                      <span className="text-black">{item.quantity}</span>
+                      <button
+                        onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                        className="px-2 py-1 border rounded text-black hover:bg-gray-100"
+                      >
+                        +
+                      </button>
+                    </div>
                   </div>
-                  
+
                   <div className="flex items-center gap-4">
                     <button
                       onClick={() => removeFromCart(item.id)}
                       className="text-red-500 hover:text-red-700 transition-colors"
-                      aria-label="Remove item"
                     >
                       Remover
                     </button>
                   </div>
                 </div>
               ))}
+             {/*  change above */}
+
             </div>
             
             <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="flex justify-between items-center mb-6">
+              {/* ✅ Added frete adicional display */}
+              <div className="flex justify-between items-center mb-3">
+                <span className="text-black">Preço do frete adicional:</span>
+                <span className="text-black">R$ {FRETE_ADICIONAL.toFixed(2)}</span>
+              </div>
+
+              <div className="flex justify-between items-center mb-6 border-t border-gray-200 pt-3">
                 <span className="font-bold text-lg text-black">Total:</span>
-                <span className="font-bold text-xl text-black ">R$ {cartTotal}</span>
+                <span className="font-bold text-xl text-black">
+                  R$ {totalComFrete.toFixed(2)}
+                </span>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
@@ -233,35 +280,33 @@ export default function CartPage() {
         )}
       </main>
       
-          <div className="flex flex-col min-h-screen bg-white">
-            <main className="flex-grow container mx-auto p-4 max-w-4xl">
-              {/* ... your cart content here ... */}
-            </main>
+          <div className="flex flex-col min-h-screen bg-black">
 
-            <footer className="w-full bg-[#fff] text-black px-4 py-4 border-t">
+
+            <footer className="w-full bg-[#000] text-white px-4 py-4 border-t">
               <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-sm">
                 <div>
-                  <h3 className="text-black font-semibold mb-2">Suporte</h3>
+                  <h3 className="text-white font-semibold mb-2">Suporte</h3>
                   <ul>
-                    <li><a href="/policy/helpCenter" className="text-black hover:underline">Centro de ajuda</a></li>
-                    <li><a href="/vestidos/suporteWhatsapp" className="text-black hover:underline">Tenho perguntas</a></li>
-                    <li><a href="/vestidos/suporteEmail" className="text-black hover:underline">Problemas com pedido</a></li>
+                    <li><a href="/policy/helpCenter" className="text-white hover:underline">Centro de ajuda</a></li>
+                    <li><a href="/vestidos/suporteWhatsapp" className="text-white hover:underline">Tenho perguntas</a></li>
+                    <li><a href="/vestidos/suporteEmail" className="text-white hover:underline">Problemas com pedido</a></li>
                   </ul>
                 </div>
 
                 <div>
-                  <h3 className="text-black font-semibold mb-2">----</h3>
+                  <h3 className="text-white font-semibold mb-2">----</h3>
                   <ul>
-                    <li><a href="https://stripe.com/br/payments" className="text-black">Vendas feitas pelo sistema renomado Stripe, Stripe, Inc.</a></li>
-                    <li><a href="https://stripe.com/br/payments" className="text-black">Seus dados são guardados</a></li>
-                    <li><a href="https://stripe.com/br/payments" className="text-black">com segurança SSL</a></li>
-                    <li><a href="https://stripe.com/br/payments" className="text-black">STRIPE🔒</a></li>
-                    <li><a href="https://stripe.com/br/payments" className="text-black">----</a></li>
-                    <li><a href="https://stripe.com/br/payments" className="text-black">https://stripe.com/br/payments</a></li>
+                    <li><a href="https://stripe.com/br/payments" className="text-white">Vendas feitas pelo sistema renomado Stripe, Stripe, Inc.</a></li>
+                    <li><a href="https://stripe.com/br/payments" className="text-white">Seus dados são guardados</a></li>
+                    <li><a href="https://stripe.com/br/payments" className="text-white">com segurança SSL</a></li>
+                    <li><a href="https://stripe.com/br/payments" className="text-white">STRIPE🔒</a></li>
+                    <li><a href="https://stripe.com/br/payments" className="text-white">----</a></li>
+                    <li><a href="https://stripe.com/br/payments" className="text-white">https://stripe.com/br/payments</a></li>
                   </ul>
                 </div>
                  <div>
-                  <h3 className="text-black font-semibold mb-2">Pagamento</h3>
+                  <h3 className="text-white font-semibold mb-2">Pagamento</h3>
                   
                     <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1761448095/boleto_raxlfu.png" className="w-10 h-5 object-cover" />
                     <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1761448097/mastercard_el0vvr.png" className="w-10 h-5 object-cover" />
@@ -270,7 +315,7 @@ export default function CartPage() {
                 </div>
 
                 <div>
-                  <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1761448103/stripe_zrvtbd.png" className="w-40 h-40 object-cover" />
+                  <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1761537601/stripePurple_jj7fpr.png" className="w-40 h-40 object-cover" />
                 </div>
 
                 <div>

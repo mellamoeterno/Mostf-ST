@@ -144,7 +144,7 @@ export default function ProductPage() {
               Compra normal, Adicionar ao Carrinho
             </button>
             </div>
-            <div>filler,non,important,filler</div>
+            <div className="text-black">-Nosso vestido Olívia veste até o 42 possuindo bojo com elástico e amarração nas costas.</div>
           </div>
         </main>
 
