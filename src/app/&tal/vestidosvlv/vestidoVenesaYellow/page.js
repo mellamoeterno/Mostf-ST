@@ -133,17 +133,18 @@ export default function ProductPage() {
               href="https://wa.me/556181808187"
               className="bg-[#133010] text-white py-1 px-3 w-30 rounded-lg hover:bg-[#092705] transition-colors"//shorten, change color to shading gold rosé
             >
-              Compre Aqui
+              WhatsApp
             </Link>
+            <img src="/images/WS.ico" className="w-10 h-10"></img>
             <p className="text-black">Por tempo limitado disponibilizamos frete grátis para compradores no Distrito Federal.</p>
             <button
               onClick={handleAddToCart}
               className="bg-[#964B00] text-white py-3 px-6 rounded-lg hover:bg-amber-900 transition-colors font-medium mt-6"
             >
-              Compra normal, Adicionar ao Carrinho
+              Adicionar ao Carrinho
             </button>
             </div>
-            <div>filler,non,important,filler</div>
+            <div>-</div>
           </div>
         </main>
 
