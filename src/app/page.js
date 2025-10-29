@@ -86,7 +86,7 @@ const conjuntos = [
       href: '/&tal/vestidosvlv/OliviaVermelhoM',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761420030/OliviaVermelhoM149_2_zvc9km.jpg",
-      title: "Olívia Vermelho M",
+      title: "Olívia Vermelho M (esgotado)",
     },
     {
       href: '/&tal/vestidosvlv/vestidoJhulyeta',
@@ -98,7 +98,7 @@ const conjuntos = [
       href: '/&tal/vestidosvlv/vestidoLeseVermelho',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761366312/leseV_2_qmdmdz.png",
-      title: "Vestido Lese Vermelho",
+      title: "Vestido Lese Vermelho (esgotado)",
     },
     {
       href: '/&tal/vestidosvlv/vestidoTubinhoBege',
