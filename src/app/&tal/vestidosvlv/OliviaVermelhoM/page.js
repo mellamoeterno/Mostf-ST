@@ -66,7 +66,7 @@ export default function ProductPage() {
 //CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART
 
     addToCart({
-      id: `Olivia Vermelho -${selectedSize}`,//title title title title title title title title
+      id: `Olivia Vermelho (esgotado) -${selectedSize}`,//title title title title title title title title
       name: `Olivia Vermelho - Tamanho ${selectedSize}`,//title title title title title title
       price: 149, //price price price price price price price price price price price price
       size: selectedSize,
@@ -107,10 +107,10 @@ export default function ProductPage() {
           <div className="w-full md:w-1/2 flex flex-col justify-between">
             <div>
               <h1 className="text-3xl font-bold mb-4 text-[#133010]">{specificName}</h1>
-              <p className="text-gray-700 mb-6">R$ {specificPrice}</p>
+              <p className="text-gray-700 mb-6">Esgotado R$ {specificPrice}</p>
 
               <div className="mb-6">
-                <h2 className="text-[#133010] text-lg font-semibold mb-2">Tamanho</h2> {/* Tamanho Tamanho Tamanho Tamanho Tamanho Tamanho */}
+                {/* <h2 className="text-[#133010] text-lg font-semibold mb-2">Tamanho</h2> 
                 <div className="flex gap-3">
                   {['M'].map((size) => (
                     <button
@@ -125,26 +125,27 @@ export default function ProductPage() {
                       {size}
                     </button>
                   ))}
-                </div>
+                </div> */}
               </div>
             </div>
 
-           <div>
+          {/*  <div>
             <Link
               href="https://wa.me/556181808187"
               className="bg-[#133010] text-white py-1 px-3 w-30 rounded-lg hover:bg-[#092705] transition-colors"//shorten, change color to shading gold rosé
             >
-              Compre Aqui
+              WhatsApp
             </Link>
+            <img src="/images/WS.ico" className="w-10 h-10"></img>
             <p className="text-black">Por tempo limitado disponibilizamos frete grátis para compradores no Distrito Federal.</p>
             <button
               onClick={handleAddToCart}
               className="bg-[#964B00] text-white py-3 px-6 rounded-lg hover:bg-amber-900 transition-colors font-medium mt-6"
             >
-              Compra normal, Adicionar ao Carrinho
+              Adicionar ao Carrinho
             </button>
-            </div>
-            <div className="text-black">-Nosso vestido Olívia veste até o 42 possuindo bojo com elástico e amarração nas costas.</div>
+            </div> */}
+           <div className="text-black">-Nosso vestido Olívia veste até o 42 possuindo bojo com elástico e amarração nas costas.</div>
           </div>
         </main>
 

@@ -97,7 +97,7 @@ export default function ProductPage() {
           {/* Infos */}
           <div className="w-full md:w-1/2 flex flex-col justify-between">
             <div>
-              <h1 className="text-3xl font-bold mb-4 text-[#133010]">Vestido Lese Vermelho</h1>
+              <h1 className="text-3xl font-bold mb-4 text-[#133010]">Vestido Lese Vermelho (esgotado)</h1>
               <p className="text-gray-700 mb-6">R$ 199,00 Esgotado</p>
 
               <div className="mb-6">
