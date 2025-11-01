@@ -58,7 +58,7 @@ const conjuntos = [
     {
       href: '/&conjunto/conjuntoIbizaBege',
       src: 
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761424506/ConjuntoBordado149M_1_rczgsn.jpg",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761990439/ConjuntoBordadoNude149M_3__tgbpaf.jpg",
       title: "Conjunto Ibiza Bege",
     },
     {
