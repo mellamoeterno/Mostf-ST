@@ -18,7 +18,7 @@ const conjuntos = [
 ];
 
 // name specific price specific name specific price specific name specific price specific name  
-  const specificName = "Conjunto bordado bege M";
+  const specificName = "Conjunto bordado Delicado bege M";
   const specificPrice = "149" // your title data
 
 
@@ -49,6 +49,7 @@ export default function ProductPage() {
 //image image image image image image image image image image image image image image image
 
   const images = [
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761990439/ConjuntoBordadoNude149M_3__tgbpaf.jpg",
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761424506/ConjuntoBordado149M_1_rczgsn.jpg",
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761445730/ConjuntoBordado149M_2_ri3mgf.jpg",
   ];
@@ -67,8 +68,8 @@ export default function ProductPage() {
 //CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART
 
     addToCart({
-      id: `Conjunto bordado bege -${selectedSize}`,//title title title title title title title title
-      name: `Conjunto bordado bege - Tamanho ${selectedSize}`,//title title title title title title
+      id: `Conjunto bordado Delicado bege -${selectedSize}`,//title title title title title title title title
+      name: `Conjunto bordado Delicado bege - Tamanho ${selectedSize}`,//title title title title title title
       price: 149, //price price price price price price price price price price price price
       size: selectedSize,
       quantity: 1,
@@ -137,7 +138,7 @@ export default function ProductPage() {
             >
               WhatsApp
             </Link>
-            <img src="/images/WS.ico" className="w-10 h-10"></img>
+            <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1761990502/WS_ueqn26.ico" className="w-10 h-10"></img>
             <p className="text-black">Por tempo limitado disponibilizamos frete grátis para compradores no Distrito Federal.</p>
             <button
               onClick={handleAddToCart}
