@@ -141,7 +141,7 @@ export default function ProductPage() {
             >
               WhatsApp
             </Link>
-            <img src="/images/WS.ico" className="w-10 h-10"></img>
+            <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1761990502/WS_ueqn26.ico" className="w-10 h-10"></img>
             <p className="text-black">Por tempo limitado disponibilizamos frete grátis para compradores no Distrito Federal.</p>
             <button
               onClick={handleAddToCart}
