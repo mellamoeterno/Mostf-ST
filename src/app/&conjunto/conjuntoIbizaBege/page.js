@@ -19,7 +19,7 @@ const conjuntos = [
 
 // name specific price specific name specific price specific name specific price specific name  
   const specificName = "Conjunto bordado Delicado bege M";
-  const specificPrice = "149" // your title data
+  const specificPrice = "139" // your title data
 
 
 export default function ProductPage() {
@@ -49,7 +49,6 @@ export default function ProductPage() {
 //image image image image image image image image image image image image image image image
 
   const images = [
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761990439/ConjuntoBordadoNude149M_3__tgbpaf.jpg",
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761424506/ConjuntoBordado149M_1_rczgsn.jpg",
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761445730/ConjuntoBordado149M_2_ri3mgf.jpg",
   ];
@@ -70,7 +69,7 @@ export default function ProductPage() {
     addToCart({
       id: `Conjunto bordado Delicado bege -${selectedSize}`,//title title title title title title title title
       name: `Conjunto bordado Delicado bege - Tamanho ${selectedSize}`,//title title title title title title
-      price: 149, //price price price price price price price price price price price price
+      price: 139, //price price price price price price price price price price price price
       size: selectedSize,
       quantity: 1,
       image: images[0],
@@ -109,7 +108,7 @@ export default function ProductPage() {
           <div className="w-full md:w-1/2 flex flex-col justify-between">
             <div>
               <h1 className="text-3xl font-bold mb-4 text-[#133010]">{specificName}</h1>
-              <p className="text-gray-700 mb-6">R$ {specificPrice}</p>
+              <p className="text-gray-700 mb-6">Preço Blackfriday de 149 por R$ {specificPrice}</p>
 
               <div className="mb-6">
                 <h2 className="text-[#133010] text-lg font-semibold mb-2">Tamanho</h2> {/* Tamanho Tamanho Tamanho Tamanho Tamanho Tamanho */}

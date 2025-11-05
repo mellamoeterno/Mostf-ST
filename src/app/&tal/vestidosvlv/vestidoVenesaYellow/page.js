@@ -18,7 +18,7 @@ const conjuntos = [
 
 // name specific price specific name specific price specific name specific price specific name  
   const specificName = "Vestido Venesa Yellow M";
-  const specificPrice = "159" // your title data
+  const specificPrice = "119" // your title data
 
 
 export default function ProductPage() {
@@ -67,7 +67,7 @@ export default function ProductPage() {
     addToCart({
       id: `Vestido Venesa Yellow -${selectedSize}`,//title title title title title title title title
       name: `Vestido Venesa Yellow - Tamanho ${selectedSize}`,//title title title title title title
-      price: 159, //price price price price price price price price price price price price
+      price: 119, //price price price price price price price price price price price price
       size: selectedSize,
       quantity: 1,
       image: images[0],
@@ -106,7 +106,7 @@ export default function ProductPage() {
           <div className="w-full md:w-1/2 flex flex-col justify-between">
             <div>
               <h1 className="text-3xl font-bold mb-4 text-[#133010]">{specificName}</h1>
-              <p className="text-gray-700 mb-6">R$ {specificPrice}</p>
+              <p className="text-gray-700 mb-6">Preço Blackfriday de 159 por R$ {specificPrice}</p>
 
               <div className="mb-6">
                 <h2 className="text-[#133010] text-lg font-semibold mb-2">Tamanho</h2> {/* Tamanho Tamanho Tamanho Tamanho Tamanho Tamanho */}
