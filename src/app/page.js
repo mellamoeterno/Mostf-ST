@@ -58,8 +58,8 @@ const conjuntos = [
     {
       href: '/&conjunto/conjuntoIbizaBege',
       src: 
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761990439/ConjuntoBordadoNude149M_3__tgbpaf.jpg",
-      title: "Conjunto Ibiza Bege",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761424506/ConjuntoBordado149M_1_rczgsn.jpg",
+      title: "Conjunto Ibiza Bege (promoção black friday)",
     },
     {
       href: '/&conjunto/conjuntoIbizaRose',
@@ -80,7 +80,7 @@ const conjuntos = [
       href: '/&tal/vestidosvlv/oliviaBranco',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761413244/oliviaBrancotam42149_1_l09sp5.png",
-      title: "Olívia branco M",
+      title: "Olívia branco G (promoção black friday)",
     },
     {
       href: '/&tal/vestidosvlv/OliviaVermelhoM',
@@ -92,7 +92,7 @@ const conjuntos = [
       href: '/&tal/vestidosvlv/vestidoJhulyeta',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761415897/vestidoJulhyeta169brancoP_3_kyheal.png",
-      title: "Vestido Jhulyeta",
+      title: "Vestido Jhulyeta (promoção black friday)",
     },
     {
       href: '/&tal/vestidosvlv/vestidoLeseVermelho',
@@ -122,19 +122,19 @@ const conjuntos = [
       href: '/&tal/vestidosvlv/vestidoVenesaAzulCianoP',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761416445/vestidoVenesaP159_2_new8mv.png",
-      title: "Vestido Venesa Azul Ciano P",
+      title: "Vestido Venesa (promoção black friday)",
     },
     {
       href: '/&tal/vestidosvlv/vestidoVenesaRosaG',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761417750/vestidoVenesaG159_1_rqhuni.png",
-      title: "Vestido Venesa Rosa G",
+      title: "Vestido Venesa (promoção black friday)",
     },
     {
       href: '/&tal/vestidosvlv/vestidoVenesaYellow',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761419818/oliviaYellowM149_2_khhxrj.jpg",
-      title: "Vestido Venesa Yellow",
+      title: "Vestido Venesa (promoção black friday)",
     },
   ];
 
@@ -253,7 +253,8 @@ const conjuntos = [
               animationPlayState: bannerVisible ? "running" : "paused",
             }}
           >
-            Vendas para Brasília frete grátis • Parcelamento na maquininha até 3x ---- Vendas para Brasília frete grátis • Parcelamento na maquininha até 3x ---- Vendas para Brasília frete grátis • Parcelamento na maquininha até 3x ---- Vendas para Brasília frete grátis • Parcelamento na maquininha até 3x ----
+            Novos preços black friday • Novos preços black friday ---- Novos preços black friday • Novos preços black friday ---- Novos preços black friday 
+            • Novos preços black friday ---- Novos preços black friday • Novos preços black friday ----
           </div>
         </div>
       </div>

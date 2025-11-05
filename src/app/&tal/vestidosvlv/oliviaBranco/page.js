@@ -19,8 +19,8 @@ const conjuntos = [
 
 
 // name specific price specific name specific price specific name specific price specific name  
-  const specificName = "olivia branco M";
-  const specificPrice = "149" // your title data
+  const specificName = "olivia branco G";
+  const specificPrice = "119" // your title data
 
 
 export default function ProductPage() {
@@ -73,7 +73,7 @@ export default function ProductPage() {
     addToCart({
       id: `olivia branco-${selectedSize}`, //title title title title title title title title
       name: `olivia branco - Tamanho ${selectedSize}`, //title title title title title title
-      price: 149, //price price price price price price price price price price price price
+      price: 119, //price price price price price price price price price price price price
       size: selectedSize,
       quantity: 1,
       image: images[0],
@@ -112,12 +112,12 @@ export default function ProductPage() {
           <div className="w-full md:w-1/2 flex flex-col justify-between">
             <div>
               <h1 className="text-3xl font-bold mb-4 text-[#133010]">{specificName}</h1>
-              <p className="text-gray-700 mb-6">R$ {specificPrice}</p>
+              <p className="text-gray-700 mb-6">Preço Blackfriday de 149 por R$ {specificPrice}</p>
 
               <div className="mb-6">
                 <h2 className="text-[#133010] text-lg font-semibold mb-2">Tamanho</h2> {/* Tamanho Tamanho Tamanho Tamanho Tamanho Tamanho */}
                 <div className="flex gap-3">
-                  {['M'].map((size) => (
+                  {['G'].map((size) => (
                     <button
                       key={size}
                       onClick={() => setSelectedSize(size)}
