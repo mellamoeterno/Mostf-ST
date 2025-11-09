@@ -9,16 +9,16 @@ import MiniCart from "@/app/components/miniCart";
 const conjuntos = [
   {
     id: `idProduct-${crypto.randomUUID()}`,
-    href: "/&tal/vestidosvlv/vestidoVenesaRosaG",
-    src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761417750/vestidoVenesaG159_1_rqhuni.png",
-    title: "Vestido Venesa Rosa G", //RELACIONADOS RELACIONADOS RELACIONADOS
-    price: 169,
+    href: "/&conjunto/conjuntoUrbanChichMarrante",
+    src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1762709881/Conjunto_Urban_Chic_189_G_Conjunto_social_feminino_em_tecido_marrante_com_blusa_assim%C3%A9trica_e_cal%C3%A7a_de_alfaiataria._Caimento_elegante_conforto_e_estilo_sofisticado_para_todas_as_ocasi%C3%B5es._3_oyxyjz.jpg",
+    title: "Conjunto Urban Chic Tecido Marrante ", //RELACIONADOS RELACIONADOS RELACIONADOS
+    price: 189,
   },
 ];
 
 // name specific price specific name specific price specific name specific price specific name  
-  const specificName = "Vestido Jhulyeta";
-  const specificPrice = "129" // your title data
+  const specificName = "Conjunto Urban Chic Nude P";
+  const specificPrice = "189" // your title data
 
 
 export default function ProductPage() {
@@ -48,9 +48,7 @@ export default function ProductPage() {
 //image image image image image image image image image image image image image image image
 
   const images = [
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761415897/vestidoJulhyeta169brancoP_3_kyheal.png",
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761415896/vestidoJulhyeta169brancoP_2_egrlfh.png",
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761415896/vestidoJulhyeta169brancoP_1_dyujde.png",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1762711085/Conjunto_Urban_Chic_189_nUDE_TAMANHO_P_Conjunto_social_feminino_em_tecido_marrante_com_blusa_assim%C3%A9trica_e_cal%C3%A7a_de_alfaiataria._Caimento_elegante_conforto_e_estilo_sofisticado_para_todas_as_oca_3_w93xc7.jpg",
   ];
 
   const handlePrev = () =>
@@ -67,9 +65,9 @@ export default function ProductPage() {
 //CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART
 
     addToCart({
-      id: `Vestido Jhulyeta -${selectedSize}`,//title title title title title title title title
-      name: `Vestido Jhulyeta - Tamanho ${selectedSize}`,//title title title title title title
-      price: 129, //price price price price price price price price price price price price
+      id: `Conjunto Urban Chic Nude -${selectedSize}`,//title title title title title title title title
+      name: `Conjunto Urban Chic Nude - Tamanho ${selectedSize}`,//title title title title title title
+      price: 189, //price price price price price price price price price price price price
       size: selectedSize,
       quantity: 1,
       image: images[0],
@@ -108,7 +106,7 @@ export default function ProductPage() {
           <div className="w-full md:w-1/2 flex flex-col justify-between">
             <div>
               <h1 className="text-3xl font-bold mb-4 text-[#133010]">{specificName}</h1>
-              <p className="text-gray-700 mb-6">Preço Blackfriday de 169 por R$ {specificPrice}</p>
+              <p className="text-gray-700 mb-6">R$ {specificPrice}</p>
 
               <div className="mb-6">
                 <h2 className="text-[#133010] text-lg font-semibold mb-2">Tamanho</h2> {/* Tamanho Tamanho Tamanho Tamanho Tamanho Tamanho */}
@@ -146,7 +144,7 @@ export default function ProductPage() {
               Adicionar ao Carrinho
             </button>
             </div>
-            <div className="text-black">Vestido Longo Luar encapsula o espírito Boho Chic com um toque de modernidade.</div>
+            <div>-</div>
           </div>
         </main>
 

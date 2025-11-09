@@ -9,15 +9,16 @@ import MiniCart from "@/app/components/miniCart";
 const conjuntos = [
   {
     id: `idProduct-${crypto.randomUUID()}`,
-    href: "/&tal/vestidosvlv/vestidoVenesaRosaG",
-    src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761417750/vestidoVenesaG159_1_rqhuni.png",
-    title: "Vestido Venesa Rosa G", //RELACIONADOS RELACIONADOS RELACIONADOS
-    price: 169,
+    href: "/&tal/vestidosvlv/vestidoJhulyeta",
+    src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761415897/vestidoJulhyeta169brancoP_3_kyheal.png",
+    title: "vestido Jhulyeta", //RELACIONADOS RELACIONADOS RELACIONADOS
+    price: 129,
   },
 ];
 
 // name specific price specific name specific price specific name specific price specific name  
-  const specificName = "Vestido Jhulyeta";
+  const specificName = "vestido Jhulyeta Marrom";
   const specificPrice = "129" // your title data
 
 
@@ -48,9 +49,9 @@ export default function ProductPage() {
 //image image image image image image image image image image image image image image image
 
   const images = [
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761415897/vestidoJulhyeta169brancoP_3_kyheal.png",
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761415896/vestidoJulhyeta169brancoP_2_egrlfh.png",
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761415896/vestidoJulhyeta169brancoP_1_dyujde.png",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1762711923/Marron_Vestido_Jhulyeta_1_zbgjuc.jpg",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1762711922/Marron_Vestido_Jhulyeta_3_vttxjg.jpg",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1762711922/Marron_Vestido_Jhulyeta_2_xpxig8.jpg",
   ];
 
   const handlePrev = () =>
@@ -67,8 +68,8 @@ export default function ProductPage() {
 //CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART
 
     addToCart({
-      id: `Vestido Jhulyeta -${selectedSize}`,//title title title title title title title title
-      name: `Vestido Jhulyeta - Tamanho ${selectedSize}`,//title title title title title title
+      id: `vestido Jhulyeta Marrom -${selectedSize}`,//title title title title title title title title
+      name: `vestido Jhulyeta Marrom - Tamanho ${selectedSize}`,//title title title title title title
       price: 129, //price price price price price price price price price price price price
       size: selectedSize,
       quantity: 1,
@@ -146,7 +147,7 @@ export default function ProductPage() {
               Adicionar ao Carrinho
             </button>
             </div>
-            <div className="text-black">Vestido Longo Luar encapsula o espírito Boho Chic com um toque de modernidade.</div>
+            <div className="text-black">Vestido Longo Luar Marrom encapsula o espírito Boho Chic com um toque de modernidade.</div>
           </div>
         </main>
 

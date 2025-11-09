@@ -67,6 +67,24 @@ const conjuntos = [
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761445514/Conjunto_BordadoibizaRos%C3%A9149G-P_1_hyaati.jpg",
       title: "Conjunto Ibiza Rose",
     },
+    {
+      href: '/&conjunto/conjuntoUrbanChicCandy',
+      src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1762709882/Conjunto_Urban_Chic_189_VERDE_CANDY_TAMANHO_M_Conjunto_social_feminino_em_tecido_marrante_com_blusa_assim%C3%A9trica_e_cal%C3%A7a_de_alfaiataria._Caimento_elegante_conforto_e_estilo_sofisticado_para_todas_3_t73t5a.jpg",
+      title: "conjunto Urban Chic Candy",
+    },
+    {
+      href: '/&conjunto/conjuntoUrbanChichMarrante',
+      src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1762709881/Conjunto_Urban_Chic_189_G_Conjunto_social_feminino_em_tecido_marrante_com_blusa_assim%C3%A9trica_e_cal%C3%A7a_de_alfaiataria._Caimento_elegante_conforto_e_estilo_sofisticado_para_todas_as_ocasi%C3%B5es._3_oyxyjz.jpg",
+      title: "conjunto Urban Chich Marrante",
+    },
+    {
+      href: '/&conjunto/conjuntoUrbanChicNude',
+      src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1762711085/Conjunto_Urban_Chic_189_nUDE_TAMANHO_P_Conjunto_social_feminino_em_tecido_marrante_com_blusa_assim%C3%A9trica_e_cal%C3%A7a_de_alfaiataria._Caimento_elegante_conforto_e_estilo_sofisticado_para_todas_as_oca_3_w93xc7.jpg",
+      title: "conjunto Urban Chic Nude",
+    },
   ];
 
   const blusas = [
@@ -93,6 +111,12 @@ const conjuntos = [
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761415897/vestidoJulhyeta169brancoP_3_kyheal.png",
       title: "Vestido Jhulyeta (promoção black friday)",
+    },
+    {
+      href: '/&tal/vestidosvlv/vestidoJhulyetaMarrom',
+      src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1762711923/Marron_Vestido_Jhulyeta_1_zbgjuc.jpg",
+      title: "vestido Jhulyeta Marron",
     },
     {
       href: '/&tal/vestidosvlv/vestidoLeseVermelho',

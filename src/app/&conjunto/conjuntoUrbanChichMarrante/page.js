@@ -9,16 +9,16 @@ import MiniCart from "@/app/components/miniCart";
 const conjuntos = [
   {
     id: `idProduct-${crypto.randomUUID()}`,
-    href: "/&tal/vestidosvlv/vestidoVenesaRosaG",
-    src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761417750/vestidoVenesaG159_1_rqhuni.png",
-    title: "Vestido Venesa Rosa G", //RELACIONADOS RELACIONADOS RELACIONADOS
-    price: 169,
+    href: "/&conjunto/conjuntoUrbanChicCandy",
+    src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1762709882/Conjunto_Urban_Chic_189_VERDE_CANDY_TAMANHO_M_Conjunto_social_feminino_em_tecido_marrante_com_blusa_assim%C3%A9trica_e_cal%C3%A7a_de_alfaiataria._Caimento_elegante_conforto_e_estilo_sofisticado_para_todas_3_t73t5a.jpg",
+    title: "Conjunto Urban Chic Candy Verde", //RELACIONADOS RELACIONADOS RELACIONADOS
+    price: 189,
   },
 ];
 
 // name specific price specific name specific price specific name specific price specific name  
-  const specificName = "Vestido Jhulyeta";
-  const specificPrice = "129" // your title data
+  const specificName = "conjunto Urban Chich Marrante";
+  const specificPrice = "189" // your title data
 
 
 export default function ProductPage() {
@@ -48,10 +48,8 @@ export default function ProductPage() {
 //image image image image image image image image image image image image image image image
 
   const images = [
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761415897/vestidoJulhyeta169brancoP_3_kyheal.png",
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761415896/vestidoJulhyeta169brancoP_2_egrlfh.png",
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761415896/vestidoJulhyeta169brancoP_1_dyujde.png",
-  ];
+  "https://res.cloudinary.com/dyiyheyzq/image/upload/v1762709881/Conjunto_Urban_Chic_189_G_Conjunto_social_feminino_em_tecido_marrante_com_blusa_assim%C3%A9trica_e_cal%C3%A7a_de_alfaiataria._Caimento_elegante_conforto_e_estilo_sofisticado_para_todas_as_ocasi%C3%B5es._3_oyxyjz.jpg",
+];
 
   const handlePrev = () =>
     setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
@@ -67,9 +65,9 @@ export default function ProductPage() {
 //CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART CART
 
     addToCart({
-      id: `Vestido Jhulyeta -${selectedSize}`,//title title title title title title title title
-      name: `Vestido Jhulyeta - Tamanho ${selectedSize}`,//title title title title title title
-      price: 129, //price price price price price price price price price price price price
+      id: `conjunto Urban Chich Marrante -${selectedSize}`,//title title title title title title title title
+      name: `conjunto Urban Chich Marrante - Tamanho ${selectedSize}`,//title title title title title title
+      price: 189, //price price price price price price price price price price price price
       size: selectedSize,
       quantity: 1,
       image: images[0],
@@ -108,12 +106,12 @@ export default function ProductPage() {
           <div className="w-full md:w-1/2 flex flex-col justify-between">
             <div>
               <h1 className="text-3xl font-bold mb-4 text-[#133010]">{specificName}</h1>
-              <p className="text-gray-700 mb-6">Preço Blackfriday de 169 por R$ {specificPrice}</p>
+              <p className="text-gray-700 mb-6">R$ {specificPrice}</p>
 
               <div className="mb-6">
                 <h2 className="text-[#133010] text-lg font-semibold mb-2">Tamanho</h2> {/* Tamanho Tamanho Tamanho Tamanho Tamanho Tamanho */}
                 <div className="flex gap-3">
-                  {['P'].map((size) => (
+                  {['G'].map((size) => (
                     <button
                       key={size}
                       onClick={() => setSelectedSize(size)}
@@ -146,7 +144,7 @@ export default function ProductPage() {
               Adicionar ao Carrinho
             </button>
             </div>
-            <div className="text-black">Vestido Longo Luar encapsula o espírito Boho Chic com um toque de modernidade.</div>
+            <div className="text-black">Conjunto social feminino em tecido marrante com blusa assimétrica e calça de alfaiataria. Caimento elegante, conforto e estilo sofisticado para todas as ocasiões.</div>
           </div>
         </main>
 
