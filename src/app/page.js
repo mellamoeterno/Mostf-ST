@@ -113,6 +113,12 @@ const conjuntos = [
       title: "Vestido Jhulyeta (promoção black friday)",
     },
     {
+      href: '/&tal/vestidosvlv/vestidoJhulyetaMarrom',
+      src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1762711923/Marron_Vestido_Jhulyeta_1_zbgjuc.jpg",
+      title: "vestido Jhulyeta Marron",
+    },
+    {
       href: '/&tal/vestidosvlv/vestidoLeseVermelho',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761366312/leseV_2_qmdmdz.png",
