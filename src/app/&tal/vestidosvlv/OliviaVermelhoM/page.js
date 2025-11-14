@@ -145,7 +145,7 @@ export default function ProductPage() {
               Adicionar ao Carrinho
             </button>
             </div> */}
-           <div className="text-black">-Nosso vestido Olívia veste até o 42 possuindo bojo com elástico e amarração nas costas.</div>
+           <div className="text-black">{/* -Nosso vestido Olívia veste até o 42 possuindo bojo com elástico e amarração nas costas. */}</div>
           </div>
         </main>
 
