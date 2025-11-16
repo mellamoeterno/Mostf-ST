@@ -1,7 +1,7 @@
 /* 'use client'
 const conjuntos = [
     {
-      id: "emily0002",
+      id: "4",
       href: 'https://checkout.infinitepay.io/sotfstudio?items=[{"name":"lese+vermelho+P","price":18900,"quantity":1}]&redirect_url=https://mostf.vercel.app/',
       src: 'images/roupas/emilyEmParis(emBreve).png',
       title: "Emily Em Paris",
@@ -9,7 +9,7 @@ const conjuntos = [
       price: 199,
     },
     {
-      id: "livia-0003",
+      id: "p",
       href: 'https://checkout.infinitepay.io/sotfstudio?items=[{"name":"lese+vermelho+P","price":18900,"quantity":1}]&redirect_url=https://mostf.vercel.app/',
       src: "images/roupas/blusaSocialHomeOffice.png",
       title: "Blusa Social Home Office",
@@ -17,7 +17,7 @@ const conjuntos = [
       price: 199,
     },
     {
-      id: "oceano-0004",
+      id: "m",
       href: '/vestidos/vestidoLeseVermelho',
       src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1759135599/leseV_1_syumax.png",
       title: "vestido lese vermelho",
@@ -25,7 +25,7 @@ const conjuntos = [
       price: 199,
     },
     {
-      id: "buque-0005",
+      id: "4",
       href: 'https://checkout.infinitepay.io/sotfstudio?items=[{"name":"lese+vermelho+P","price":18900,"quantity":1}]&redirect_url=https://mostf.vercel.app/',
       src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672831/conjunto_7_csvmte.jpg",
       title: "Rosa buquê",
@@ -33,7 +33,7 @@ const conjuntos = [
       price: 199,
     },
     {
-      id: "nome1",
+      id: "b",
       href: 'https://checkout.infinitepay.io/sotfstudio?items=[{"name":"lese+vermelho+P","price":18900,"quantity":1}]&redirect_url=https://mostf.vercel.app/',
       src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672831/conjunto_6_ojwfyg.jpg",
       title: "Conjunto Miranda",
@@ -41,7 +41,7 @@ const conjuntos = [
       price: 199,
     },
     {
-      id: "nome2",
+      id: "3",
       href: 'https://checkout.infinitepay.io/sotfstudio?items=[{"name":"lese+vermelho+P","price":18900,"quantity":1}]&redirect_url=https://mostf.vercel.app/',
       src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672830/barbara_3_pgquqv.jpg",
       title: "Conjunto Bárbara",
@@ -49,7 +49,7 @@ const conjuntos = [
       price: 199,
     },
     {
-      id: "nome3",
+      id: "5",
       href: 'https://checkout.infinitepay.io/sotfstudio?items=[{"name":"lese+vermelho+P","price":18900,"quantity":1}]&redirect_url=https://mostf.vercel.app/',
       src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672830/auroraVinho_4_dl4lnv.jpg",
       title: "Aurora vinho",
@@ -57,7 +57,7 @@ const conjuntos = [
       price: 199,
     },
     {
-      id: "nome4",
+      id: "teest",
       href: 'https://checkout.infinitepay.io/sotfstudio?items=[{"name":"lese+vermelho+P","price":18900,"quantity":1}]&redirect_url=https://mostf.vercel.app/',
       src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672829/barbara_2_2r_zr39iw.jpg",
       title: "Barbara Cáqui",
