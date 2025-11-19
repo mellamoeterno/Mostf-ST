@@ -65,7 +65,7 @@ const conjuntos = [
       price: 199,
     },
     {
-      id: "nome5",
+      id: "5",
       href: 'https://checkout.infinitepay.io/sotfstudio?items=[{"name":"lese+vermelho+P","price":18900,"quantity":1}]&redirect_url=https://mostf.vercel.app/',
       src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672829/barbara_1_mh6ngs.jpg",
       title: "Barbara Branco",
@@ -76,7 +76,7 @@ const conjuntos = [
 
   const blusas = [
     {
-      id: "nome6",
+      id: "6",
       href: 'https://checkout.infinitepay.io/sotfstudio?items=[{"name":"lese+vermelho+P","price":18900,"quantity":1}]&redirect_url=https://mostf.vercel.app/',
       src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672897/trico_4_plg40d.jpg",
       title: "Blusa tricô",
@@ -84,7 +84,7 @@ const conjuntos = [
       price: 199,
     },
     {
-      id: "nome7",
+      id: "7",
       href: 'https://checkout.infinitepay.io/sotfstudio?items=[{"name":"lese+vermelho+P","price":18900,"quantity":1}]&redirect_url=https://mostf.vercel.app/',
       src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672893/pu_3_iibpi1.jpg",
       title: "Jaqueta Pu",
@@ -92,7 +92,7 @@ const conjuntos = [
       price: 199,
     },
     {
-      id: "nome8",
+      id: "8",
       href: 'https://checkout.infinitepay.io/sotfstudio?items=[{"name":"lese+vermelho+P","price":18900,"quantity":1}]&redirect_url=https://mostf.vercel.app/',
       src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749672891/jaquetaOutonoV_1_fktdvc.jpg",
       title: "Jaqueta Outono",
@@ -103,7 +103,7 @@ const conjuntos = [
 
   const calcas = [
     {
-      id: "nome9",
+      id: "9",
       href: 'https://checkout.infinitepay.io/sotfstudio?items=[{"name":"lese+vermelho+P","price":18900,"quantity":1}]&redirect_url=https://mostf.vercel.app/',
       src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1749679231/trouserBranca_1_xpl4rr.jpg",
       title: "Calça Comfy",
