@@ -283,6 +283,9 @@ const conjuntos = [
         </div>
       </div>
       {/* caroulsel message */}
+      {/* carousel for perfumes */}
+      
+      {/* carousel for perfumes */}
 
       {/* PRODUCTS PRODUCTS PRODUCTS */}
       <img src="https://res.cloudinary.com/dyiyheyzq/image/upload/v1758517835/mostflogoLarge_mzy4ex.jpg" className="fixed top-0 w-full z-30 flex items-center justify-between px-6 py-0 object-cover" />
