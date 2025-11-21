@@ -283,8 +283,19 @@ const conjuntos = [
         </div>
       </div>
       {/* caroulsel message */}
+
       {/* carousel for perfumes */}
-      
+      {/* <div className="relative w-full overflow-hidden">
+        <div className="flex animate-[slide_20s_linear_infinite]">
+
+          <img src="/img1.jpg" className="w-full h-64 object-cover flex-shrink-0" />
+          <img src="/img2.jpg" className="w-full h-64 object-cover flex-shrink-0" />
+          <img src="/img3.jpg" className="w-full h-64 object-cover flex-shrink-0" />
+          <img src="/img4.jpg" className="w-full h-64 object-cover flex-shrink-0" />
+          <img src="/img5.jpg" className="w-full h-64 object-cover flex-shrink-0" />
+
+        </div>
+      </div> */}
       {/* carousel for perfumes */}
 
       {/* PRODUCTS PRODUCTS PRODUCTS */}
