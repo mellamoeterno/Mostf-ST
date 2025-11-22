@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { Menu } from "lucide-react";
 import { useCart } from "@/app/contexts/CartContext";
 import MiniCart from "@/app/components/miniCart";
+import ProductCarousel from "@/app/components/ProductCarousel";
 
 export default function DesktopComponent() {
   const [showHeaderNames, setShowHeaderNames] = useState(true);
@@ -186,6 +187,28 @@ const conjuntos = [
 
     /* MARQUEE / BANNER STATE */
 
+    /* perfume carousel logic */
+/*     const scrollRef = useRef(null);
+
+    const scrollLeft = () => {
+      if (scrollRef.current) {
+        scrollRef.current.scrollBy({
+          left: -300,
+          behavior: "smooth",
+        });
+      }
+    };
+
+    const scrollRight = () => {
+      if (scrollRef.current) {
+        scrollRef.current.scrollBy({
+          left: 300,
+          behavior: "smooth",
+        });
+      }
+    };
+ */
+     /* perfume carousel logic */
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-[#ffffff] via-[#ffffff] to-[#ffffff] font-sans px-4 sm:px-6 md:px-8 gap-10">
@@ -285,17 +308,12 @@ const conjuntos = [
       {/* caroulsel message */}
 
       {/* carousel for perfumes */}
-      {/* <div className="relative w-full overflow-hidden">
-        <div className="flex animate-[slide_20s_linear_infinite]">
+      {/* <main className="px-4 py-8">
+        <h2 className="text-xl font-bold mb-6">Featured Products</h2>
 
-          <img src="/img1.jpg" className="w-full h-64 object-cover flex-shrink-0" />
-          <img src="/img2.jpg" className="w-full h-64 object-cover flex-shrink-0" />
-          <img src="/img3.jpg" className="w-full h-64 object-cover flex-shrink-0" />
-          <img src="/img4.jpg" className="w-full h-64 object-cover flex-shrink-0" />
-          <img src="/img5.jpg" className="w-full h-64 object-cover flex-shrink-0" />
+        <ProductCarousel />  
 
-        </div>
-      </div> */}
+      </main> */}
       {/* carousel for perfumes */}
 
       {/* PRODUCTS PRODUCTS PRODUCTS */}
