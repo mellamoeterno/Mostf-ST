@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { Menu } from "lucide-react";
 import { useCart } from "@/app/contexts/CartContext";
 import MiniCart from "@/app/components/miniCart";
-import ProductCarousel from "@/app/components/ProductCarousel";
+import ProductCarousel from "@/app/components/perfumeCarousel";
 
 export default function DesktopComponent() {
   const [showHeaderNames, setShowHeaderNames] = useState(true);
