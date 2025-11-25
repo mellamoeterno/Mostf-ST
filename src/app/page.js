@@ -102,12 +102,6 @@ const conjuntos = [
       title: "Olívia branco G (promoção black friday)",
     },
     {
-      href: '/&tal/vestidosvlv/OliviaVermelhoM',
-      src: 
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761420030/OliviaVermelhoM149_2_zvc9km.jpg",
-      title: "Olívia Vermelho M (esgotado)",
-    },
-    {
       href: '/&tal/vestidosvlv/vestidoJhulyeta',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761415897/vestidoJulhyeta169brancoP_3_kyheal.png",
