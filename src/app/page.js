@@ -89,12 +89,6 @@ const conjuntos = [
   ];
 
   const blusas = [
-      {
-      href: '/&tal/vestidosvlv/nudeM',
-      src: 
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761409461/Nude_M_1_ivwe2p.png",
-      title: "Vestido Lese offwhite M (esgotado)",
-    },
     {
       href: '/&tal/vestidosvlv/oliviaBranco',
       src: 
