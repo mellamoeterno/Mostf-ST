@@ -108,12 +108,6 @@ const conjuntos = [
       title: "vestido Jhulyeta Marron",
     },
     {
-      href: '/&tal/vestidosvlv/vestidoLeseVermelho',
-      src: 
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761366312/leseV_2_qmdmdz.png",
-      title: "Vestido Lese Vermelho (esgotado)",
-    },
-    {
       href: '/&tal/vestidosvlv/vestidoTubinhoBege',
       src: 
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1761442449/VestidoTubihno129P_2_osxvgn.jpg",
