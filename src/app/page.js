@@ -290,12 +290,12 @@ const conjuntos = [
       {/* caroulsel message */}
 
       {/* carousel for perfumes */}
-      {/* <main className="px-4 py-8">
+       <main className="px-4 py-8">
         <h2 className="text-xl font-bold mb-6">Featured Products</h2>
 
         <ProductCarousel />  
 
-      </main> */}
+      </main> 
       {/* carousel for perfumes */}
 
       {/* PRODUCTS PRODUCTS PRODUCTS */}
