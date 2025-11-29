@@ -12,7 +12,7 @@ const conjuntos = [
     href: 
     "/perfumes/signSweet",
     src: 
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1763774413/hcc2_tiu9ua.jpg",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1763774412/sign1_vjli1f.jpg",
     title: "signSweet", //RELACIONADOS RELACIONADOS RELACIONADOS
     price: 45
   },
