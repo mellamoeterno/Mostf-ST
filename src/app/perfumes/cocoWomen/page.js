@@ -12,7 +12,7 @@ const conjuntos = [
     href: 
    "/perfumes/hcc",
     src: 
-    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1763774412/hcc1_q6glzx.jpg",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1763774413/hcc2_tiu9ua.jpg",
     title: "HCC women", //RELACIONADOS RELACIONADOS RELACIONADOS
     price: 45
   },
@@ -51,6 +51,7 @@ export default function ProductPage() {
 
   const images = [
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1763774413/coco1_psfbjr.jpg",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1763774412/coco2_oqef4v.jpg",
   ];
 
   const handlePrev = () =>

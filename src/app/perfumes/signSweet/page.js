@@ -11,7 +11,8 @@ const conjuntos = [
     id: `idProduct-${crypto.randomUUID()}`,
     href: 
     "/perfumes/cocoWomen",
-    src: "https://res.cloudinary.com/dyiyheyzq/image/upload/v1763774413/coco1_psfbjr.jpg",
+    src: 
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1763774412/coco2_oqef4v.jpg",
     title: "COCO women", //RELACIONADOS RELACIONADOS RELACIONADOS
     price: 45
   },
@@ -50,6 +51,7 @@ export default function ProductPage() {
 
   const images = [
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1763774412/sign1_vjli1f.jpg",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1763774413/sign2_vymits.jpg",
   ];
 
   const handlePrev = () =>
