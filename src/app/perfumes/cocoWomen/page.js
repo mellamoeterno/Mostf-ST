@@ -51,6 +51,7 @@ export default function ProductPage() {
 
   const images = [
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1763774413/coco1_psfbjr.jpg",
+    "https://res.cloudinary.com/dyiyheyzq/image/upload/v1763774413/coco1_psfbjr.jpg",
     "https://res.cloudinary.com/dyiyheyzq/image/upload/v1763774412/coco2_oqef4v.jpg",
   ];
 
