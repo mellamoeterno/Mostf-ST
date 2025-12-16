@@ -1,18 +1,23 @@
 import React, { useState } from "react";
 
 export default function SimpleForm() {
-  // State for form values
-  const [formData, setFormData] = useState({
+  // State for form values - 1 useState
+  const [formData, setFormData] = useState({ //array destructuring data from useState, atrieving formData, and setFormData
     name: "",
     email: "",
-  });
+  }); // ({}) triggering useState, cause if not done it wont be shot right away, and will only be showing there, because behind is not an function, but array destructuring.
+// and also ({}) is setting some object with {} which is just data.
+// in here () is used to trigger right away cus if not it`ll only be referencing the useState and it wont do nothing.
+//with that cleared, what exactly is () triggering in useState tho. 
+//if it was a function being declared by myself i`d know what was the code inside. But useState is an api method
 
-  // State for errors
-  const [errors, setErrors] = useState({});
+  // State for errors - 2 useState stateErrors
+  const [errors, setErrors] = useState({});//and in here is just initialized but with empty code in {}, although it also works in a way as paremeter because its
+  //inside () but how that work?
   const [submittedData, setSubmittedData] = useState(null);
 
-  // Handle field changes
-  const handleChange = (e) => { //(e) object with information about events that just occured (mouse usage, keyboard keys clicked, etc)
+  // Handle field changes - 3 handleChange method
+  const handleChange = (e) => { //(e) object with information about events that just occured (mouse usage, keyboard keys clicked, etc) but with () => {}
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -20,7 +25,7 @@ export default function SimpleForm() {
     }));
   };
 
-  // Simple validation
+  // Simple validation - 4 validate
   const validate = () => {
     const newErrors = {};
 
