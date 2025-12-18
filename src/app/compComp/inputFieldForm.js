@@ -2,10 +2,10 @@ import React, { useState } from "react";
 
 export default function SimpleForm() {
   // State for form values - 1 useState
-  const [formData, setFormData] = useState({ //array destructuring data from useState, atrieving formData, and setFormData
+  const [formData, setFormData] = useState({ //array destructuring data from useState, atrieving initial value type, and update function, assigned to fromData and setFromData.
     name: "",
     email: "",
-  }); // ({}) triggering useState, cause if not done it wont be shot right away, and will only be showing there, because behind is not an function, but array destructuring.
+  }); // ({}) triggering useState, cause if not done it wont be shot right away, and will only be showing there.
 // and also ({}) is setting some object with {} which is just data.
 // in here () is used to trigger right away cus if not it`ll only be referencing the useState and it wont do nothing.
 //with that cleared, what exactly is () triggering in useState tho. 
@@ -13,7 +13,9 @@ export default function SimpleForm() {
 
   // State for errors - 2 useState stateErrors
   const [errors, setErrors] = useState({});//and in here is just initialized but with empty code in {}, although it also works in a way as paremeter because its
-  //inside () but how that work?
+  //inside () but how that work? That work by giving initial value an type, this type being empty object ({}).
+  //gotta learn what these initial values are actually for...
+  
   const [submittedData, setSubmittedData] = useState(null);
 
   // Handle field changes - 3 handleChange method
