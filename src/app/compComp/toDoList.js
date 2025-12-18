@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function TodoList() {
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState([]); // assingning initial value type and updateFunction to tasks, setTasks from useState.
   const [input, setInput] = useState("");
 
   // Add a new task
