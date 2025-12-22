@@ -3,7 +3,7 @@
 export default function todoList2(){
     const [tasks, setTasks] = useState([]);
     const [input, setInput] = useState("");
-//add new task
+//add new task 1 
     const addTask = () => {
         if(input.trim() === "") return
 
@@ -17,7 +17,7 @@ export default function todoList2(){
         setInput("");
     };
 
-    //toggle completed
+    //toggle completed 2 
     const toggleTask = (id) => {
         setTasks(prev =>
             prev.map(tasks =>
@@ -28,6 +28,7 @@ export default function todoList2(){
         );
     };
 
+    //delete a task 3 
     const deleteTask = (id) => {
         setTasks(prev => prev.filter(task => task.id !== id)); //??????? what de fok is diss?
     };
