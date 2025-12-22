@@ -1,13 +1,15 @@
 /* import React, { useState } from "react";
 
 export default function inputField(){
+    // State for form values 1
+
     const [formData, setFormData] = useState({
         name: "",
         id: ""
     })
     const [erros, setErrors] = useState({});
     const [submittedData, setSubmittedData] = useState(null);
-
+   // Handle field changes 2 
     const handleChange = (e) => {
         const { name,value } = e.target;
         setFormData((prev) =>({
@@ -15,7 +17,8 @@ export default function inputField(){
             [name]:value,
         }));
 
-    const validade = () => {
+    // Simple validation 3
+    const validate = () => {
         const newErrors = {};
 
         if (!formData.name.trim()) {
@@ -30,6 +33,7 @@ export default function inputField(){
         return newErrors;  
     };
 
+    // Handle form submit 4 
     const handleSubmit = (e) => {
         e.preventDefault();
 
