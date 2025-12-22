@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-export default function SimpleForm() {
+export default function SimpleForm() {//figure out if what this is doing is just making react see it as (every code inside here is react jsx related)
+  //with the "export default function" signaling it.
   // State for form values - 1 useState
   const [formData, setFormData] = useState({ //array destructuring data from useState, atrieving initial value type, and update function, assigned to fromData and setFromData.
     name: "",
