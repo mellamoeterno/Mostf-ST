@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 //input field form - capture user input, show entered data or submit / validate input
-export default function inputField(){
+export default function SimpleForm(){
 
     
     const [formData, setFormData] = useState({
