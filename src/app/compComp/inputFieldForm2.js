@@ -1,15 +1,24 @@
-/* import React, { useState } from "react";
-
+import React, { useState } from "react";
+//input field form - capture user input, show entered data or submit / validate input
 export default function inputField(){
-    // State for form values 1
 
+    
     const [formData, setFormData] = useState({
         name: "",
         id: ""
-    })
-    const [erros, setErrors] = useState({});
+    });
+    //what this above const is, is probably for data that will be used later on and updated with an function code to update it and store it
+    //the use of the functions name:
+    //formData clearly indicates it holds form data
+    //setFormData follows the setX naming convention for state setters
+
+    //the single object approach (formData) is cleaner when:
+    //You have multiple related fields
+    //You need to submit/reset all at once
+    //Fields are logically grouped together
+    const [errors, setErrors] = useState({});
     const [submittedData, setSubmittedData] = useState(null);
-   // Handle field changes 2 
+
     const handleChange = (e) => {
         const { name,value } = e.target;
         setFormData((prev) =>({
@@ -17,7 +26,6 @@ export default function inputField(){
             [name]:value,
         }));
 
-    // Simple validation 3
     const validate = () => {
         const newErrors = {};
 
@@ -33,7 +41,7 @@ export default function inputField(){
         return newErrors;  
     };
 
-    // Handle form submit 4 
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -45,6 +53,66 @@ export default function inputField(){
         }
     }
     };
+
+    return (
+    <div style={{ width: "320px", margin: "40px auto" }}>
+      <h2>Simple Form</h2>
+
+      <form onSubmit={handleSubmit}>
+        {/* Name field */}
+        <div style={{ marginBottom: "12px" }}>
+          <label>
+            Name
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              style={{ display: "block", width: "100%", padding: "6px" }}
+            />
+          </label>
+          {errors.name && (
+            <div style={{ color: "red", fontSize: "12px" }}>
+              {errors.name}
+            </div>
+          )}
+        </div>
+
+        {/* Email field */}
+        <div style={{ marginBottom: "12px" }}>
+          <label>
+            Email
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              style={{ display: "block", width: "100%", padding: "6px" }}
+            />
+          </label>
+          {errors.email && (
+            <div style={{ color: "red", fontSize: "12px" }}>
+              {errors.email}
+            </div>
+          )}
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      {/* Show submitted data */}
+      {submittedData && (
+        <div style={{ marginTop: "20px" }}>
+          <h3>Submitted Data</h3>
+          <p>
+            <strong>Name:</strong> {submittedData.name}
+          </p>
+          <p>
+            <strong>Email:</strong> {submittedData.email}
+          </p>
+        </div>
+      )}
+    </div>
+  );
 }
 
- */

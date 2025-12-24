@@ -1,6 +1,6 @@
 'use client'
 import React, {useState} from "react";
-
+//a button (or buttons) that increment (and maybe decrement / reset) a number
 export default function Counter() {
     const [count, setCount] = useState(0);
 

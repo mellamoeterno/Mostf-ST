@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+//To-Do List app — allow user to add, delete, mark tasks completed
 export default function TodoList() {
   const [tasks, setTasks] = useState([]); // assingning initial value type and updateFunction to tasks, setTasks from useState.
   const [input, setInput] = useState("");

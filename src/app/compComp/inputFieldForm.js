@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+//input field form  - capture user input, show entered data or submit / validate input
 export default function SimpleForm() {//figure out if what this is doing is just making react see it as (every code inside here is react jsx related)
   //with the "export default function" signaling it.
   // State for form values - 1 useState
