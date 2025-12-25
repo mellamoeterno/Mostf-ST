@@ -7,7 +7,8 @@ export default function SimpleForm(){
         name: "",
         id: ""
     });
-    //what this above const is, is probably for data that will be used later on and updated with an function code to update it and store it
+    //what this above const is, is probably for data that will be used later on and updated with an function code to update it and store it.
+    //
     //the use of the functions name:
     //formData clearly indicates it holds form data
     //setFormData follows the setX naming convention for state setters
