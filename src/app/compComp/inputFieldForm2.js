@@ -29,7 +29,7 @@ export default function SimpleForm(){
         //here we get the use of the 'e' inside the parameter of the arrow function, if i had to guess what its doing
         //is that its using all the curly brace logic to listen and then pass all to handleChange
         //
-        //The answer and a better explaining is:
+        //The answer and a better explaining is:::::::
         // "When you give me 'e', I will process it like this..."
         //
         //  const machineBlueprint = (e) => {
