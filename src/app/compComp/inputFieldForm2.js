@@ -21,7 +21,7 @@ export default function SimpleForm(){
     const [submittedData, setSubmittedData] = useState(null);
 
     const handleChange = (e) => {
-        const { name,value } = e.target;
+        const { name,value } = e.target; //access operator ~get me te thing called X from this object~   ~object . property~
         setFormData((prev) =>({
             ...prev,
             [name]:value,
@@ -29,7 +29,7 @@ export default function SimpleForm(){
         //here we get the use of the 'e' inside the parameter of the arrow function, if i had to guess what its doing
         //is that its using all the curly brace logic to listen and then pass all to handleChange
         //
-        //The answer and a better explaining is:::::::
+        //The answer and a better explaining is:
         // "When you give me 'e', I will process it like this..."
         //
         //  const machineBlueprint = (e) => {
@@ -38,8 +38,12 @@ export default function SimpleForm(){
         //
         //
         //
+        //a new question is, when the () is empty, does it stop saying "when you give me this, I will process it like this..."?
+        //so the answer is: "I don't need any information - I'll just do my thing"
         //
-        //take a look later at deepseek grey chat on last question about the = sign between (e) and the function.
+        //in this handleChange function (e) is needed for the use if .e inside the curly braces logic. Which is e.target
+        //
+        //const { name,value } is destructuring 'e.target'  
 
     const validate = () => {
         const newErrors = {};
