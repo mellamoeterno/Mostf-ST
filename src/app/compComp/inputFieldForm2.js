@@ -26,6 +26,13 @@ export default function SimpleForm(){
             ...prev,
             [name]:value,
         }));
+        //about (prev) =>
+        //
+        //this is handle gun for use arrow function ,but using ({}) and being at the same time inside one ()
+        //if i had to guess, its trigerring setFormData right away and mixing the code from inside {} when its triggered. But
+        //that setFormData array only has the update function from useState, i dont know what that actually does in this cenario.
+        //and i dont know what having the curly braces inside () does to that either.
+
         //here we get the use of the 'e' inside the parameter of the arrow function, if i had to guess what its doing
         //is that its using all the curly brace logic to listen and then pass all to handleChange
         //
@@ -41,7 +48,11 @@ export default function SimpleForm(){
         //a new question is, when the () is empty, does it stop saying "when you give me this, I will process it like this..."?
         //so the answer is: "I don't need any information - I'll just do my thing"
         //
-        //in this handleChange function (e) is needed for the use if .e inside the curly braces logic. Which is e.target
+        //in this handleChange function (e) is needed for the use if 'e' is inside the curly braces logic. Which is e.target
+        //
+        //in the case of having an empty () when using arrow function, itll just simply be like () => triggers/sets up the code inside {} to wait
+        //
+        //and as we already know, having something inside () like (e) is just an request of information before inside of {} to actually work.
         //
         //const { name,value } is destructuring 'e.target'  
 

@@ -19,7 +19,7 @@ export default function SimpleForm() {//figure out if what this is doing is just
   
   const [submittedData, setSubmittedData] = useState(null);
 
-  // Handle field changes - 3 handleChange methoddddddd
+  // Handle field changes - 3 handleChange method
   const handleChange = (e) => { //(e) object with information about events that just occured (mouse usage, keyboard keys clicked, etc) but with () => {}
     const { name, value } = e.target;
     setFormData((prev) => ({
