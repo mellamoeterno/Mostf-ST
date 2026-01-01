@@ -11,7 +11,7 @@ export default function SimpleForm(){
     //
     //the use of the functions name:
     //formData clearly indicates it holds form data
-    //setFormData follows the setX naming convention for state setters
+    //setFormData follows the setX naming convention for state setterssssss
 
     //the single object approach (formData) is cleaner when:
     //You have multiple related fields
