@@ -6,7 +6,7 @@ export default function TodoList() {
 
   // Add a new task
   const addTask = () => { // handle gun for use
-    if (input.trim() === "") return //=== strict equality (=== "") if both operands arent exactly a empty string "", its going to return -false
+    if (input.trim() === "") return //=== strict equalityyyy (=== "") if both operands arent exactly a empty string "", its going to return -false
 
     const newTask = {
       id: Date.now(),
