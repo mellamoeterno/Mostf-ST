@@ -21,17 +21,23 @@ export default function SimpleForm(){
     const [submittedData, setSubmittedData] = useState(null);
 
     const handleChange = (e) => {
-        const { name,value } = e.target; //access operator ~get me te thing called X from this object~   ~object . property~
-        setFormData((prev) =>({
+        const { name,value } = e.target; //destructuring name, value from e.target, using {} because e.target is an object (a DOM element object)
+                                         //e.target gets the name, value and assign to the destructuring - const {name, value} = e.target;
+        setFormData((prev) =>({          //prev is basically for updating the state based on previous value.      
             ...prev,
             [name]:value,
         }));
-        //about (prev) =>
+        //about prev
+        //prev is used exclusively with state update functions in React when you use the functional update pattern.
         //
+        //
+        //about (() => ({}))
         //this is handle gun for use arrow function ,but using ({}) and being at the same time inside one ()
-        //if i had to guess, its trigerring setFormData right away and mixing the code from inside {} when its triggered. But
-        //that setFormData array only has the update function from useState, i dont know what that actually does in this cenario.
-        //and i dont know what having the curly braces inside () does to that either.
+        //why it has to be ({}) instead of normal ()?
+        //
+        //
+        //The setFormData has the updateFunction from useState, which is used to update the data from formData.
+        //as if its triggering an change into the data itself, without it wouldnt update, and remain static.
 
         //here we get the use of the 'e' inside the parameter of the arrow function, if i had to guess what its doing
         //is that its using all the curly brace logic to listen and then pass all to handleChange
