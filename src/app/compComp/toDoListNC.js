@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 //To-Do List app — allow user to add, delete, mark tasks completed
 export default function TodoList() {
-  const [tasks, setTasks] = useState([]); // assingning initial value type and updateFunction to tasks, setTasks from useState.
+  const [tasks, setTasks] = useState([]); 
   const [input, setInput] = useState("");
 
   // Add a new task
-  const addTask = () => { // handle gun for use
-    if (input.trim() === "") return //=== strict equality (=== "") if both operands arent exactly a empty string "", its going to return -false
+  const addTask = () => { 
+    if (input.trim() === "") return 
 
     const newTask = {
       id: Date.now(),
@@ -31,7 +31,7 @@ export default function TodoList() {
 
   // Delete a task
   const deleteTask = (id) => {
-    setTasks(prev => prev.filter(task => task.id !== id)); //!== stric inequality, if both operands are not different will return -false.
+    setTasks(prev => prev.filter(task => task.id !== id)); 
   };
 
   return (
