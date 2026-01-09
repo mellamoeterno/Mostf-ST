@@ -27,7 +27,7 @@ export default function SimpleForm(){
             ...prev,
             [name]:value,
         }));
-        //about prev
+        //about prevvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
         //prev is used exclusively with state update functions in React when you use the functional update pattern.
         //
         //
