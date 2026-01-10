@@ -27,7 +27,7 @@ export default function SimpleForm(){
             ...prev,
             [name]:value,
         }));
-        //about prevvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+        //about prev
         //prev is used exclusively with state update functions in React when you use the functional update pattern.
         //
         //
@@ -35,6 +35,7 @@ export default function SimpleForm(){
         //this is handle gun for use arrow function ,but using ({}) and being at the same time inside one ()
         //why it has to be ({}) instead of normal ()?
         //
+        //answer: () makes the {} be read by javascript as a object, and wont throw errors when using prev. 
         //
         //The setFormData has the updateFunction from useState, which is used to update the data from formData.
         //as if its triggering an change into the data itself, without it wouldnt update, and remain static.
