@@ -77,7 +77,11 @@ export default function SimpleForm(){
 
         return newErrors;  
     };
+        /* else if:   it provides an alternative code path when an if condition is not met. (and has same syntax as if statement) also else cannot be used alone. 
 
+        It always requires a preceding if statement.
+
+        */
 
     const handleSubmit = (e) => {
         e.preventDefault();
