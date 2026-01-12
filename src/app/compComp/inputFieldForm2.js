@@ -27,6 +27,7 @@ export default function SimpleForm(){
             ...prev,
             [name]:value,
         }));
+      }
         //about prev
         //prev is used exclusively with state update functions in React when you use the functional update pattern.
         //
@@ -92,7 +93,6 @@ export default function SimpleForm(){
         if (Object.keys(validationErrors).length === 0) {
             setSubmittedData(formData);
         }
-    }
     };
 
     return (
