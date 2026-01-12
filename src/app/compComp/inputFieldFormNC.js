@@ -1,19 +1,21 @@
 import React, { useState } from "react";
-//statte for form data  - capture user input, show entered data or submit / validate input
+
 export default function SimpleForm() {
+
+  //statte for form data 
   const [formData, setFormData] = useState({ 
     name: "",
     email: "",
   }); 
 
 
-  // State for errors - 2 useState stateErrors
+  // State for errors 
   const [errors, setErrors] = useState({});
  
-  
+  //state for submittedData
   const [submittedData, setSubmittedData] = useState(null);
 
-  // Handle field changes - 3 handleChange method
+  // Handle field changes 
   const handleChange = (e) => { 
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -22,7 +24,7 @@ export default function SimpleForm() {
     }));
   };
 
-  // Simple validation - 4 validate
+  // Simple validation 
   const validate = () => {
     const newErrors = {};
 
