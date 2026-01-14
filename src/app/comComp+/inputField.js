@@ -23,7 +23,7 @@ export default function toDoList(){
         setFormData((prev) => ({        //triggering setFormData to use the update function stored in set form data, and setting 
             ...prev,
             [name]:value,               //i dont know why tf, but this just means it Creates:{email: "john@example.com"} from the user input. sum called computed property name.
-        }));                            //more abt this in prev grey opera.
+        }));                            //more abt this in prev grey opera.....
 
     };
    
