@@ -31,7 +31,7 @@ export default function toDoList(){
     const validate = () => {
         const newErrors = {};
 
-        if (!formData.name.trim()) {
+        if (!formData.name.trim()) {                    //figure out what .name.trim means
             newErrors.name  = "name is required"
         }
 
