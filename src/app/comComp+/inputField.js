@@ -26,7 +26,8 @@ export default function toDoList(){
         }));                            //more abt this in prev grey opera.....
 
     };
-   
+                                        //[name]: value creates an object where the property name is whatever value is in the name variable, and assigns the value to it.
+                                        //So when name = "email" and value = "john@example.com"
     const validate = () => {
         const newErrors = {};
 
