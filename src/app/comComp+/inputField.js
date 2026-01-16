@@ -49,7 +49,7 @@ export default function() {
             setErrors(validationErrors);
             
             if (Object.keys(validationErros).length === 0) { 
-                setSubmittedData(formData);                      
+                setSubmittedData(formData);                   //figure out how ts work    
             }
         }
        
