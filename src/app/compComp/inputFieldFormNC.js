@@ -2,17 +2,17 @@ import React, { useState } from "react";
 
 export default function SimpleForm() {
 
-  //statte for form data 
+  //statte for form data ({name:"", email:"",}) 
   const [formData, setFormData] = useState({ 
     name: "",
     email: "",
   }); 
 
 
-  // State for errors 
+  // State for errors ({})
   const [errors, setErrors] = useState({});
  
-  //state for submittedData
+  //state for submittedData(null)
   const [submittedData, setSubmittedData] = useState(null);
 
   // Handle field changes 
@@ -47,9 +47,8 @@ export default function SimpleForm() {
 
     const validationErrors = validate();
     setErrors(validationErrors);
-
+     // No validation errors
     if (Object.keys(validationErrors).length === 0) {
-      // No validation errors
       setSubmittedData(formData);
     }
   };

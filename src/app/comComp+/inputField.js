@@ -1,69 +1,148 @@
-/* //state for form
-//state for errors
-//state for submitted data
-//handle change
+/* //to do list app, capture user input, show entered data, submit and validate input.
+//state for form data - formData - setFormData ({name: "", value:"",})
+//state for errors - errors - setErrors ({})
+//state for handlesubmit - submittedData - setSubmittedData (null)
+//const handleChange
 //simple validation
 //handle form submit
-//no validation
+//no validation errors
 
-import React, { useState } from "react";
+import React, {useState} from "react";
 
-export default function toDoList(){
+export default function() {
+       
+       const [formData, setFormData] = useState({
+        name:"",
+        value:"",
+       });
+       const [errors, setErrors] = useState({});
+       const [submittedData, setSubmittedData] = useState(null);
 
-    const [formData, setFormData ] = useState({
-        email: "",
-        name: "",
-    });
-    
-    const [errors, setErrors ] = useState({});
-    const [submittedData, setSubmittedData ] = useState(null);
-
-    const handleChange = (e) => {
-        const {name, value} = e.target; //destructuring name and value from e.target with {} because its an object being destructured.
-        setFormData((prev) => ({        //triggering setFormData to use the update function stored in set form data, and setting 
+       const handleChange = (e) => {
+        const {value, name} = e.target;
+        setFormData((prev)=>({
             ...prev,
-            [name]:value,               //i dont know why tf, but this just means it Creates:{email: "john@example.com"} from the user input. sum called computed property name.
-        }));                            //more abt this in prev grey opera.....
+            [name]:value,
+        }))
+        }
+        
+        const validate = () => {
+         const newErrors = {};
 
-    };
-                                        //[name]: value creates an object where the property name is whatever value is in the name variable, and assigns the value to it.
-                                        //So when name = "email" and value = "john@example.com"
-    const validate = () => {
-        const newErrors = {};
+         if (!formData.name.trim()) {
+            newErrors.name = "blabla"
+         }
+         if (!formData.email.trim()) {
+            newErrors.email = "blabla"
+         } else if (!formData.email.include("@")) {
+            newErrors.email = "blabla"
 
-        if (!formData.name.trim()) {                    //figure out what .name.trim means
-            newErrors.name  = "name is required"
+            return newErrors;
+        }
         }
 
-        if (!formData.email.trim()) {
-            newErrors.email = "email is required"
-        } else if (!formData.email.includes("@")) {
-            newErrors.email = "email must contain @"
+        const handleSubmit = (e) => {
+            e.preventDefault();
+
+            const validationErros = validate();
+
+            setErrors(validationErrors);
+            
+            if (Object.keys(validationErros).length === 0) { 
+                setSubmittedData(formData);                      
+            }
         }
+       
 
-        return newErrors;
-    };
-    
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
 
-        const validationErrors = validate();
-        setErrors(validationErrors);
 
-        if (Object.keys(validationErrors).length === 0 ) {
-            setSubmittedData(formData);
-        }
-    }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
 
-        const validationErrors = validate();
-        setErrors(validationErrors);
 
-        if(Object.keys(validationErrors).length === 0) {
-            setSubmittedData(formData);
-        }
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    return (
+    <div style={{ width: "320px", margin: "40px auto" }}>
+      <h2>Simple Form</h2>
+
+      <form onSubmit={handleSubmit}>
+        <div style={{ marginBottom: "12px" }}>
+          <label>
+            Name
+            <input
+              type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              style={{ display: "block", width: "100%", padding: "6px" }}
+            />
+          </label>
+          {errors.name && (
+            <div style={{ color: "red", fontSize: "12px" }}>
+              {errors.name}
+            </div>
+          )}
+        </div>
+
+        <div style={{ marginBottom: "12px" }}>
+          <label>
+            Email
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              style={{ display: "block", width: "100%", padding: "6px" }}
+            />
+          </label>
+          {errors.email && (
+            <div style={{ color: "red", fontSize: "12px" }}>
+              {errors.email}
+            </div>
+          )}
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+
+      {submittedData && (
+        <div style={{ marginTop: "20px" }}>
+          <h3>Submitted Data</h3>
+          <p>
+            <strong>Name:</strong> {submittedData.name}
+          </p>
+          <p>
+            <strong>Email:</strong> {submittedData.email}
+          </p>
+        </div>
+      )}
+    </div>
+  );
 } */
