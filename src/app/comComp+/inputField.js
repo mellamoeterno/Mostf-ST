@@ -1,4 +1,4 @@
-//to do list app, capture user input, show entered data, submit and validate input.
+/* //to do list app, capture user input, show entered data, submit and validate input.
 //state for form ({name:"",value:"",})
 //state for errors ({})
 //state for submit (null)
@@ -141,4 +141,4 @@ export default function(){
       )}
     </div>
   );
-}
+} */

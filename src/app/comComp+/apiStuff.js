@@ -23,7 +23,7 @@ const useDebouncedSearch = (searchTerm, delay) => {
             setDebouncedValue(searchTerm);
         },delay);
         return () => ClearTimeout(timer);
-    }, [searchTerm, delay])
+    }, [searchTerm, delay]) 
     
 }
 
