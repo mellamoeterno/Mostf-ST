@@ -1,61 +1,57 @@
-/* //to do list app, capture user input, show entered data, submit and validate input.
-//state for form data - formData - setFormData ({name: "", value:"",})
-//state for errors - errors - setErrors ({})
-//state for handlesubmit - submittedData - setSubmittedData (null)
-//const handleChange
+//to do list app, capture user input, show entered data, submit and validate input.
+//state for form ({name:"",value:"",})
+//state for errors ({})
+//state for submit (null)
+//handle change
 //simple validation
 //handle form submit
-//no validation errors
+//no validation
 
 import React, {useState} from "react";
 
-export default function() {
-       
-       const [formData, setFormData] = useState({
-        name:"",
-        value:"",
-       });
-       const [errors, setErrors] = useState({});
-       const [submittedData, setSubmittedData] = useState(null);
+export default function(){
 
-       const handleChange = (e) => {
-        const {value, name} = e.target;
-        setFormData((prev)=>({
-            ...prev,
-            [name]:value,
-        }))
-        }
-        
-        const validate = () => {
-         const newErrors = {};
+  const [formData, setFormData] = useState({
+    name:"",
+    value:"",
+  });
+  const [errors, setErrors] = useState({});
+  const [submittedData, setSubmittedData] = useState(null);
 
-         if (!formData.name.trim()) {
-            newErrors.name = "blabla"
-         }
-         if (!formData.email.trim()) {
-            newErrors.email = "blabla"
-         } else if (!formData.email.include("@")) {
-            newErrors.email = "blabla"
+  const handleChange = (e) => {
+    const {name, value} = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]:value,
+    }));
+  };
 
-            return newErrors;
-        }
-        }
+  const validate = () => {
+    if (!formData.name.trim()){
+    newErrors.name = "must contain name"
+    }
+    if (!formData.email.trim()){
+      newErrors.email = "must contain email"
+    } else if (!formData.email.include("@")){
+      newErrors.email = "must contain @"
+      
+    }
 
-        const handleSubmit = (e) => {
-            e.preventDefault();
+    return newErrors;
+   };
+  
+   const handleSubmit = (e) => {
+    e.preventDefault();
 
-            const validationErros = validate();
+    const validationErrors = validate();
 
-            setErrors(validationErrors);
-            
-            if (Object.keys(validationErros).length === 0) { 
-                setSubmittedData(formData);                   //figure out how ts workkk    
-            }
-        }
-       
+    setErrors(validationErrors);
 
-
-
+    if(Object.keys(validationErrors).length === 0){
+      setSubmittedData(formData);
+    }
+   };
+   
 
 
 
@@ -145,4 +141,4 @@ export default function() {
       )}
     </div>
   );
-} */
+}
