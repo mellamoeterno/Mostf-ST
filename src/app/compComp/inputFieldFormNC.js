@@ -76,13 +76,13 @@ export default function SimpleForm() {
 
 //Its like a club bouncer checking IDs:
 
-//e.preventDefault() = "Hold up, don't let anyone in yet"
+//e.preventDefault()  "Hold up, don't let anyone in yet"
 
-//validate() = "Check everyone's IDs"
+//validate()  "Check everyone's IDs"
+ 
+//setErrors()   "Tell people what's wrong with their IDs"
 
-//setErrors() = "Tell people what's wrong with their IDs"
-
-//The if statement = "If all IDs are valid, let everyone in and record their names" 
+//The if statement    "If all IDs are valid, let everyone in and record their names" 
 
   return (
     <div style={{ width: "320px", margin: "40px auto" }}>
