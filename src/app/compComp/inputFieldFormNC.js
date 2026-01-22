@@ -59,7 +59,7 @@ export default function SimpleForm() {
 
 //if (!formData.email.includes("@"))   Checks if the email looks right
 
-//return newErrors   Hands back the completed grading sheet with all mistakes noted 
+//return newErrors   Hands back the completed grading sheet with all mistakes noted   
 
 
   // Handle form submit
