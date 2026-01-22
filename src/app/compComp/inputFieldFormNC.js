@@ -70,7 +70,7 @@ export default function SimpleForm() {
     setErrors(validationErrors);        // Updates state to show any error messages 
 
     if (Object.keys(validationErrors).length === 0) {// If no errors found
-      setSubmittedData(formData);       // Saves the form data to show success/result
+      setSubmittedData(formData);       // Saves the form data to show success/result  
     }
   };
 
