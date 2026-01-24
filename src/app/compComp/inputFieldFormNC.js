@@ -82,7 +82,7 @@ export default function SimpleForm() {
  
 //setErrors()   "Tell people what's wrong with their IDs"
 
-//The if statement    "If all IDs are valid, let everyone in and record their names"   
+//The if statement    "If all IDs are valid, let everyone in and record their names"     
 
   return (
     <div style={{ width: "320px", margin: "40px auto" }}>
