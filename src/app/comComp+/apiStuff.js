@@ -15,17 +15,17 @@ const useFetchData = (url) => {
 
 //search with debounce 
 
-const useDebouncedSearch = (searchTerm, delay) => {
-  const [debouncedValue, setDebouncedValue] = useState(searchTerm);
+const useDebouncedSearch = (searhTerm, delay) => {
+    const [debouncedValue, setDebouncedValue] = useState(searhTerm);
 
-  useEffect(() => {
-        const timer = timeOut(() => {
+    useEffect(() => {
+        const timer = setTimoeout(() => {
             setDebouncedValue(searchTerm);
         },delay);
         return () => ClearTimeout(timer);
-    }, [searchTerm, delay]) 
-    
-}
+    },[searchTerm, delay])
+};
+
 
 
 
