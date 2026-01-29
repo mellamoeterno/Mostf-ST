@@ -18,7 +18,7 @@ class EnhancedErrorBoundary extends Component {
   }
 
   componentDidCatch(error, errorInfo) {
-    console.error('Error caught by Error Boundary:', error, errorInfo); 
+    console.error('Error caught by Error Boundary:', error, errorInfo);  
     
     this.setState({
       error: error,
