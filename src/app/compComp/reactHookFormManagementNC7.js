@@ -1,25 +1,39 @@
 /* // useFormWithValidation.js
 import { useState, useCallback } from 'react';
 
-export const useFormWithValidation = (initialValues = {}, validationSchema = {}, onSubmitCallback) => { //useFormWithValidation - here use export const, not export default. Look at grey opera
-  const [values, setValues] = useState(initialValues);
+export const useFormWithValidation = (initialValues = {}, validationSchema = {}, onSubmitCallback) => { //useFormWithValidation made available to other modules by 'export'
+  const [values, setValues] = useState(initialValues); //it seems that this is like (useState(initialValues) = Making a copy of that to work with)
   const [errors, setErrors] = useState({});
   const [touched, setTouched] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Validate a single field
-  const validateField = useCallback((name, value) => {    //useCallback
+  const validateField = useCallback((name, value) => {    //useCallback hook
     if (!validationSchema[name]) return null;             //validationSchema[name] - return null
 
     const rules = validationSchema[name];                 
     let error = null;
 
     // Required validation
-    if (rules.required && !value && value !== 0) {
-      error = rules.requiredMessage || 'This field is required';
+    if (rules.required && !value && value !== 0) { //Field must have a value, 0 is considered a valid value (not empty)
+      error = rules.requiredMessage || 'This field is required';//Error message: rules.requiredMessage or default "This field is required"
     }
     // Pattern validation
-    else if (rules.pattern && value && !rules.pattern.test(value)) {
+    else if (rules.pattern && value && !rules.pattern.test(value)) {  //3 conditions must ALL be true to trigger error:        //1 
+                                                                                                                               //rules.pattern exists
+                                                                                                                               //The field must have a pattern rule defined
+                                                                                                                               //pattern should be a RegExp (regular expression) object
+                                                                                                                               //2
+                                                                                                                               //value exists (truthy)
+                                                                                                                               //The field must have a value (not empty/null/undefined)
+                                                                                                                               //Pattern validation only runs when there's a value
+                                                                                                                               //Empty fields won't trigger pattern errors (they'd trigger required errors instead)
+                                                                                                                               //3
+                                                                                                                               //!rules.pattern.test(value) is true
+                                                                                                                               //The RegExp test() method returns false for the value
+                                                                                                                               //The value does NOT match the pattern
+                                                                                                                               //The ! (NOT) operator makes this true when test fails 
+
       error = rules.patternMessage || 'Invalid format';
     }
     // Min length validation
@@ -38,6 +52,12 @@ export const useFormWithValidation = (initialValues = {}, validationSchema = {},
 
     return error;
   }, [validationSchema, values]);
+
+//better visualisation on this whole caca:
+//  
+//rules.pattern.test(value) = "Does it match?"
+//!rules.pattern.test(value) = "Does it NOT match?"
+
 
   // Validate all fields
   const validateForm = useCallback(() => {

@@ -19,12 +19,13 @@ const useDebouncedSearch = (searhTerm, delay) => {
     const [debouncedValue, setDebouncedValue] = useState(searhTerm);
 
     useEffect(() => {
-        const timer = setTimoeout(() => {
+        const timer = setTimeout(() => {
             setDebouncedValue(searchTerm);
         },delay);
         return () => ClearTimeout(timer);
     },[searchTerm, delay])
 };
+
 
 
 
