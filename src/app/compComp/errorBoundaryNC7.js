@@ -12,7 +12,7 @@ class EnhancedErrorBoundary extends Component {
       retryCount: 0
     };
   }
-
+ 
   static getDerivedStateFromError(error) {   
     return { hasError: true };
   }
