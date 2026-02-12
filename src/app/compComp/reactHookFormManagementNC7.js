@@ -13,7 +13,7 @@ export const useFormWithValidation = (initialValues = {}, validationSchema = {},
 
     const rules = validationSchema[name];                 
     let error = null;
-
+ 
     // Required validation
     if (rules.required && !value && value !== 0) { //Field must have a value, 0 is considered a valid value (not empty)
       error = rules.requiredMessage || 'This field is required';//Error message: rules.requiredMessage or default "This field is required"
