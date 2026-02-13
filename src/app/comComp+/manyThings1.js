@@ -29,6 +29,9 @@ export default Counter;
  */
 
 
+
+
+
 //when in need of creating a controlled component for an input field.
 
 /* import React, { useState } from 'react';
@@ -36,8 +39,8 @@ export default Counter;
 const ControlledInput = () => {
     const [value, setValue] = useState('');
 
-    const handleChange = (event) => {
-        setValue(event.target.value);
+    const handleChange = (e) => {
+        setValue(e.target.value);
     };
 
     return <input type="text" value={value} onChange={handleChange} />;
@@ -48,6 +51,15 @@ export default ControlledInput;
 
 
 
- 
+
+
+
+
+
+
+
+
+
+
 
 
