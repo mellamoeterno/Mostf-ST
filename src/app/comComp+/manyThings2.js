@@ -26,26 +26,25 @@ export default DataFetchingComponent; */
 
 
 
-
     
 
 
 //when in need of passing data from a parent component to a child component
 
 
-/* const ChildComponent = ({ message }) => {
-    return <h3>{message}</h3>;
+/* const ChildComponent = ({ messageFromChild }) => {
+    return <h3>{messageFromChild}</h3>;
 };
 
 const ParentComponent = () => {
-    const message = "Hello from Parent";
+    const messageFromParent = "Hello from Parent";
 
-    return <ChildComponent message={message} />;
+    return <ChildComponent messageFromChild={messageFromParent} />;
 };
 
 export default ParentComponent; */
 
-//create a passing data from a parent component to a child component:
+
 
 
 
@@ -68,4 +67,6 @@ const ToggleComponent = () => {
 };
 
 export default ToggleComponent; */
+
+
 
