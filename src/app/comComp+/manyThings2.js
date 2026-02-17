@@ -25,7 +25,6 @@ export default DataFetchingComponent; */
 
 
 
-
     
 
 
@@ -44,9 +43,8 @@ const ParentComponent = () => {
 
 export default ParentComponent; */
 
-
-
-
+//i dont get why  return <ChildComponent messageFromChild={messageFromParent} />;
+//figure ts out.
 
 
 
