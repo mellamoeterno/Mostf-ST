@@ -5,17 +5,12 @@
 const ComponentDidMountExample = () => {
     useEffect(() => {
         console.log('Component Mounted');
-    }, []);                                                          // <<< Empty dependency array mimics componentDidMount
+    }, []);                                                     // Empty dependency array mimics componentDidMount
 
     return <h2>Check the console for a message.</h2>;
 };
 
 export default ComponentDidMountExample; */
-
-//create a useEffect hook to mimic componentdidmount
-
-//create a useEffect hook and mimic component did mount
-
 
 
 
@@ -45,6 +40,9 @@ const HighlightList = () => {
 };
 
 export default HighlightList; */
+
+
+
 
 
 
@@ -84,3 +82,4 @@ const EmailForm = () => {
 };
 
 export default EmailForm; */
+
