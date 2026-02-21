@@ -45,8 +45,6 @@ export default HighlightList; */
 
 
 
-
-
 //when in need to create a simple form with validation for an email input
 
 
