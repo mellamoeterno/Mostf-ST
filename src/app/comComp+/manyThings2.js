@@ -22,9 +22,6 @@ const DataFetchingComponent = () => {
 
 export default DataFetchingComponent; */
 
-
-
-
     
 
 
@@ -65,5 +62,4 @@ const ToggleComponent = () => {
 };
 
 export default ToggleComponent; */
-
 

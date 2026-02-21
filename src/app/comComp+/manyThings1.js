@@ -43,13 +43,11 @@ const ControlledInput = () => {
         setValue(e.target.value);
     };
 
-    return <input type="text" value={value} onChange={handleChange} />;
+    return <input type="text" value={value} onChange={handleChange} />;                      figure out why the is value={value}
 };
 
 export default ControlledInput;
  */
-
-
 
 
 
