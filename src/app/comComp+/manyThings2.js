@@ -1,5 +1,6 @@
 //when in need to write a component that fetches data from an API and displays it
 
+
 /* import React, { useEffect, useState } from 'react';
 
 const DataFetchingComponent = () => {
@@ -14,7 +15,7 @@ const DataFetchingComponent = () => {
     return (
         <ul>
             {data.map(item => (
-                <li key={item.id}>{item.name}</li>          //display on return part
+                <li key={item.id}>{item.name}</li>          //"key" makes react identify which items have changed, been added, or been removed in a list.
             ))}
         </ul>
     );
@@ -22,13 +23,12 @@ const DataFetchingComponent = () => {
 
 export default DataFetchingComponent; */
 
-    
 
 
 //when in need of passing data from a parent component to a child component
 
 
-/* const ChildComponent = ({ messageFromChild }) => {
+/* const ChildComponent = ({ messageFromChild }) => {               ({ messageFromChild }) its like a const messageFromChild created inside ({}), but used like for data hold
     return <h3>{messageFromChild}</h3>;
 };
 
@@ -40,8 +40,7 @@ const ParentComponent = () => {
 
 export default ParentComponent; */
 
-//i dont get why  return <ChildComponent messageFromChild={messageFromParent} />;
-//figure ts out.
+
 
 
 
