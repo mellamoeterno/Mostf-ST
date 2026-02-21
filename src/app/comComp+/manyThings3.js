@@ -14,8 +14,6 @@ export default ComponentDidMountExample; */
 
 
 
-
-
 //when in need of creating a component that displays a list of items and highlights the selected item
 
 /* import React, { useState } from 'react';
@@ -29,7 +27,7 @@ const HighlightList = () => {
             {items.map((item, index) => (
                 <li 
                     key={index} 
-                    onClick={() => setSelectedIndex(index)} 
+                    onClick={() => setSelectedIndex(index)}                             figure out why is setSelectedIndex(index) and not (items)
                     style={{ backgroundColor: selectedIndex === index ? 'yellow' : 'white' }}
                 >
                     {item}
@@ -40,8 +38,6 @@ const HighlightList = () => {
 };
 
 export default HighlightList; */
-
-
 
 
 
