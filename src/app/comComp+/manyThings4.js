@@ -12,7 +12,6 @@ const withLogging = (WrappedComponent) => {
 
 export default withLogging; */
 
-
  
 
 
