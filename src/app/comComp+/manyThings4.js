@@ -13,6 +13,7 @@ const withLogging = (WrappedComponent) => {
 export default withLogging; */
 
 
+ 
 
 
 //when in need of demonstrating how to utilize the useContext hook in React (allowing components to access context data 
@@ -40,6 +41,7 @@ const App = () => {
 };
 
 export default App; */
+
 
 
 
