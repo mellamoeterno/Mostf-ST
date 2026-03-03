@@ -25,6 +25,10 @@ export default DataFetchingComponent; */
 
 
 
+
+
+
+
 //when in need of passing data from a parent component to a child component
 
 
@@ -39,6 +43,9 @@ const ParentComponent = () => {
 };
 
 export default ParentComponent; */
+
+
+
 
 
 
@@ -61,4 +68,3 @@ const ToggleComponent = () => {
 };
 
 export default ToggleComponent; */
-
