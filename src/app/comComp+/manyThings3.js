@@ -14,8 +14,6 @@ export default ComponentDidMountExample; */
 
 
 
-
-
 //when in need of creating a component that displays a list of items and highlights the selected item
 
 /* import React, { useState } from 'react';
@@ -40,8 +38,6 @@ const HighlightList = () => {
 };
 
 export default HighlightList; */
-
-
 
 
 
