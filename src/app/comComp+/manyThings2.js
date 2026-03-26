@@ -63,3 +63,4 @@ const ToggleComponent = () => {
 
 export default ToggleComponent; */
 
+//translate to tsx

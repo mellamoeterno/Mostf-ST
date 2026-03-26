@@ -78,3 +78,4 @@ export default AsyncFetchComponent; */
 
 
 
+//translate to tsx
