@@ -82,4 +82,4 @@ const EmailForm = () => {
 
 export default EmailForm; */
 
-  
+  //translate to tsx
