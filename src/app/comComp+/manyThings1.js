@@ -13,6 +13,7 @@ export default Greeting;
 
 
 
+
 // when in need of creating a component that maintains a count state and has buttons to increment and decrement the count.
 
 /* import React, { useState } from 'react';
@@ -30,6 +31,7 @@ const Counter = () => {
 
 export default Counter;
  */
+
 
 
 
