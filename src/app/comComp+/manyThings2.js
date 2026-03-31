@@ -27,6 +27,7 @@ export default DataFetchingComponent; */
 
 
 
+
 //when in need of passing data from a parent component to a child component
 
 
@@ -64,4 +65,8 @@ const ToggleComponent = () => {
 export default ToggleComponent; */
 
 //translate to tsx
+//--------
+//isOn, setIsOn
+//ternary 
+//--------
 

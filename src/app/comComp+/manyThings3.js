@@ -13,7 +13,6 @@ const ComponentDidMountExample = () => {
 export default ComponentDidMountExample; */
 
 
-
 //when in need of creating a component that displays a list of items and highlights the selected item
 
 /* import React, { useState } from 'react';
@@ -25,13 +24,7 @@ const HighlightList = () => {
     return (
         <ul>
             {items.map((item, index) => (
-                <li 
-                    key={index} 
-                    onClick={() => setSelectedIndex(index)}                             figure out why is setSelectedIndex(index) and not (items)
-                    style={{ backgroundColor: selectedIndex === index ? 'yellow' : 'white' }}
-                >
-                    {item}
-                </li>
+                <li key={index} onClick={() => setSelectedIndex(index)} style={{ backgroundColor: selectedIndex === index ? 'yellow' : 'white' }}> {item} </li>
             ))}
         </ul>
     );
@@ -39,8 +32,15 @@ const HighlightList = () => {
 
 export default HighlightList; */
 
+//-------
+//item1 2 3
+//selectedIndex
+//items.map((item, index) => (<li>))
+//key, onClick, style
+//-------
 
 
+//figure out why is setSelectedIndex(index) and not (items)
 
 
 
@@ -56,8 +56,8 @@ const EmailForm = () => {
     const [email, setEmail] = useState('');
     const [error, setError] = useState('');
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
+    const handleSubmit = (e) => {
+        e.preventDefault();
         if (!/\S+@\S+\.\S+/.test(email)) {
             setError('Invalid email format');
         } else {
@@ -68,12 +68,7 @@ const EmailForm = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input 
-                type="email" 
-                value={email} 
-                onChange={(e) => setEmail(e.target.value)} 
-                placeholder="Enter your email" 
-            />
+            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter your email"/>
             <button type="submit">Submit</button>
             {error && <p style={{ color: 'red' }}>{error}</p>}
         </form>
@@ -81,5 +76,34 @@ const EmailForm = () => {
 };
 
 export default EmailForm; */
+
+//--------
+//email, setEmail, error, setError
+//handleSubmit with if else
+//return <form> onSubmit, input
+//--------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   //translate to tsx
