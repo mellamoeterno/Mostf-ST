@@ -1,0 +1,551 @@
+1
+React basics (1, 2, 4)
+Virtual DOM + reconciliation (6, 7)
+Components vs elements (13, 14)
+State, props, data flow (20, 26)
+Keys (16)
+2
+useEffect (and misuse)
+useMemo / useCallback
+useRef / useContext
+Custom hooks
+3
+Performance (61, 62, 63)
+State management (Context vs libs)
+Forms (controlled/uncontrolled)
+Routing
+
+(33 35 41 45 37 38 39 40 18 32 49 51 57 53 59)
+
+1.
+What is React, and what problems does it solve compared to vanilla JS or jQuery?
+-----
+
+
+
+2.
+How does React support single-page applications?
+-----
+
+
+3.
+What’s the key architectural difference between React and Angular?
+-----
+
+
+
+
+4.
+What is JSX, and how does TSX relate to it in React projects?
+-----
+
+
+
+
+5.
+How do transpilation, JSX, and build tools fit into the modern JavaScript toolchain for React, and how do they optimize compiled output?
+-----
+
+
+
+
+
+
+
+6.
+What is the virtual DOM, and how does React use it?
+-----
+
+
+
+7.
+How does React reconcile the virtual DOM with the actual DOM, and why is this important for performance?
+-----
+
+
+8.
+Explain the Virtual DOM and how React renders it to the DOM
+-----
+
+
+
+
+
+
+9.
+What is hydration, and what do partial or selective hydration mean?
+-----
+
+
+
+
+
+10.
+In React 18, what is the difference between rendering and committing, and how does concurrent rendering allow React to discard work?
+-----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11.
+What is the StrictMode component, and why would you use it?
+-----
+
+
+
+12.
+Why does React need a root element to render an application?
+-----
+
+
+
+13.
+What are components in React?
+-----
+
+
+
+
+
+
+
+
+14.
+What is the difference between React elements and React components?
+-----
+
+
+15.
+What are React fragments, and when should you use them?
+-----
+
+
+16.
+What is the significance of keys in React?
+-----
+
+
+
+
+
+
+
+17.
+What are functional components and class components?
+-----
+
+
+
+
+
+
+18.
+Are there scenarios where class components are still preferable to functional components with Hooks?
+-----
+
+
+19.
+Why do class methods need to be bound, and how can you avoid binding?
+-----
+
+
+
+
+
+
+20.
+What is state, and how does it differ from props?
+-----
+
+
+
+
+
+21.
+What are pure functional components?
+-----
+
+
+
+
+
+
+
+22.
+What is the significance of refs in React?
+-----
+
+
+
+
+
+23.
+What is the purpose of React.forwardRef, and how is it used?
+-----
+
+
+
+
+
+
+
+24.
+What are controlled and uncontrolled components?
+-----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+25.
+How do you handle events in React components?
+-----
+
+
+
+
+26.
+What is unidirectional data flow in React?
+-----
+
+
+
+
+27.
+What are the most common approaches for styling a React application?
+-----
+
+
+
+
+
+
+
+
+
+28.
+What are the main trade-offs of using React component libraries such as shadcn/ui, HeroUI, NextUI, or Material UI (MUI)?
+-----
+
+
+
+
+
+
+29.
+What is prop drilling, and how can you avoid it?
+-----
+
+
+
+
+
+
+30.
+How can you restrict props to certain types, or require specific props to exist?
+-----
+
+
+
+
+31.
+How did creating React components differ between ES5 and ES2015 (ES6), and what were the trade-offs?
+-----
+
+
+
+
+
+
+
+
+32.
+What are hooks in React?
+-----
+
+
+
+33.
+What is the useEffect hook, and how does it replace lifecycle methods?
+-----
+
+
+
+34.
+How can you run code only once when a component first renders, using class and function components?
+-----
+
+
+
+
+35.
+When should you not use useEffect? Give three common misuse cases and the correct alternatives.
+-----
+
+
+
+
+
+
+
+
+
+
+
+
+
+36.
+[Legacy projects only: React < 16] Compare and contrast React component lifecycle methods
+-----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+37.
+What is useMemo and when should you use it?
+-----
+
+
+
+38.
+What is useCallback and when should you use it?
+-----
+
+
+
+39.
+What is useRef and its common use cases?
+-----
+
+
+40.
+How does useContext work?
+-----
+
+
+41.
+What is useLayoutEffect and how does it differ from useEffect?
+-----
+
+
+
+
+
+42.
+What problem do startTransition and useTransition actually solve in React?
+-----
+
+
+
+
+
+43.
+How would you create a custom Hook in React?
+-----
+
+
+44.
+Which option (A or B) will trigger a Hook order runtime error, and why?
+-----
+
+
+
+
+
+
+45.
+How can you access the latest state value inside a useEffect cleanup function without re-running the effect on every state change?
+-----
+
+
+
+
+46.
+How can you prevent a memoized child component from re-rendering when a callback prop changes on every parent render?
+-----
+
+
+
+
+47.
+How would you create higher-order components (HOCs) in React?
+-----
+
+
+
+
+48.
+What are portals in React?
+-----
+
+
+49.
+How do you manage application state in React, and what are the advantages of using a state management library like Redux or MobX?
+-----
+
+
+50.
+What are the potential downsides or trade-offs of using Redux or MobX, and how can you mitigate them?
+-----
+
+
+51.
+Why would you use a third-party state management library like Zustand instead of the Context API in a React application?
+-----
+
+
+52.
+What is React Router, and how do you set it up?
+-----
+
+
+
+
+53.
+What is dynamic routing in React Router, and how do you handle nested routes and catch-all routes?
+-----
+
+
+
+
+
+
+54.
+[Legacy projects only, < circa 2016] In a general overview, how might React Router and its techniques differ from more traditional JavaScript routers like Backbone’s Router?
+-----
+
+
+
+
+55.
+What are route guards?
+-----
+
+
+56.
+How do you handle form submissions in React?
+-----
+
+
+
+57.
+Why use form libraries (for example, React Hook Form or Formik) to handle forms in React?
+-----
+
+
+
+58.
+What is dangerouslySetInnerHTML in React, what security risks does it introduce, and what safer alternatives can you use?
+-----
+
+
+
+59.
+When is client-side routing less suitable, and how would you route instead?
+-----
+
+
+60.
+What’s your experience with SSR and SSG in React, and how do they improve SEO and UX?
+-----
+
+
+
+61.
+How would you investigate and fix slow rendering in a React page?
+-----
+
+
+
+62.
+How do you render very large lists in React?
+-----
+
+
+63.
+What is code splitting in React, and why use it?
+-----
+
+
+
+64.
+In React 19, what is the React Compiler, and how can it reduce unnecessary re-renders?
+-----
+
+65.
+What is concurrent rendering in React, and why is it useful?
+-----
+
+
+
+66.
+What are error boundaries in React?
+-----
+
+
+
+
+
+67.
+How do you handle i18n and l10n in React, and why does it matter?
+-----
+
+
+
+68.
+How do you build accessible React applications, and why does it matter?
+-----
+
+
+69.
+What tools do you use to test accessibility in React?
+-----
+
+70.
+How can automated tools improve accessibility in a React application?
+-----
+
+
+
+
+71.
+What are the pros and cons of shallow rendering in React tests?
+-----
+72.
+How do you decide whether to adopt a new or experimental React library in production? Name two criteria you require and one risk you watch for.
+-----

@@ -83,6 +83,20 @@ export default EmailForm; */
 //return <form> onSubmit, input
 //--------
 
+//create a simple form with validation for an email input
+
+
+
+//email setEmail, error setError
+//handleChange with if else
+//return <form> onSubmit <input>
+
+
+
+
+
+
+//translate to tsx
 
 
 
@@ -95,6 +109,7 @@ export default EmailForm; */
 
 
 
+//
 
 
 
@@ -106,4 +121,4 @@ export default EmailForm; */
 
 
 
-  //translate to tsx
+//
