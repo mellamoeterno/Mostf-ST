@@ -13,7 +13,6 @@ export default Greeting;
 
 
 
-
 // when in need of creating a component that maintains a count state and has buttons to increment and decrement the count.
 
 /* import React, { useState } from 'react';
@@ -39,6 +38,7 @@ export default Counter;
 
 //when in need of creating a controlled component for an input field.
 
+
 /* import React, { useState } from 'react';
 
 const ControlledInput = () => {
@@ -54,6 +54,11 @@ const ControlledInput = () => {
 export default ControlledInput;
  */
 
+//--------------
+//value, setValue
+//handleChange
+//input 
+//--------------
 
 //translate to tsx
 
@@ -64,4 +69,13 @@ export default ControlledInput;
 
 
 
+//
 
+
+
+
+
+
+
+
+//

@@ -3,18 +3,21 @@
 //When React re-renders a list, it needs to answer:
 //“Which item is the same as before, which changed, which moved, and which is new or removed?”
 
-/* {items.map((item, index) => (
-  <li key={index}>{item.name}</li>
+//Bad Example (No key at all — breaks reconciliation)
+/* {items.map(item => (
+  <li>{item.name}</li>
 ))}
  */
+//Problematic Example (Index as key — causes bugs)
+/* {items.map((item, index) => (
+  <li key={index}>{item.name}</li>
+))} */
 
-//with proper keys
-
+//Good Example (Stable unique key — correct approach)
 /* {items.map(item => (
   <li key={item.id}>{item.name}</li>
 ))}
  */
-
 //“Keys give each div or list item a unique ID, so React tracks changes efficiently. Without them, mapping an array could re-render everything, 
 //breaking form validation or slowing the app.”
 
